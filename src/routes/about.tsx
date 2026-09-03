@@ -122,7 +122,7 @@ function About() {
                   <Icon className="size-5" />
                 </span>
                 <div>
-                  <h3 className="text-sm font-bold uppercase tracking-wide text-ink">{title}</h3>
+                  <h3 className="font-sans text-sm font-bold uppercase tracking-wide text-ink">{title}</h3>
                   <p className="mt-1 text-sm leading-snug text-muted-foreground">{body}</p>
                 </div>
               </div>
