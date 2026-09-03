@@ -19,7 +19,7 @@ export function LogoMark({ className = "h-9" }: { className?: string }) {
       src={logo.url}
       alt="Better Mangalore"
       loading="lazy"
-      className={`${className} w-auto object-contain mix-blend-screen`}
+      className={`${className} w-auto rounded-sm bg-background object-contain p-0.5`}
     />
   );
 }
