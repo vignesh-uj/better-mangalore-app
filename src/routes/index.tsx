@@ -82,18 +82,21 @@ const LATEST = [
 
 const CONVERSATIONS = [
   {
+    slug: "praveen-kalbhavi-novigo-solutions",
     image: person1,
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
   },
   {
+    slug: "rohan-shetty-coastal-ventures",
     image: person2,
     name: "Rohan Shetty",
     role: "Managing Director, Coastal Ventures",
     blurb: "On leadership, innovation and opportunities in the years ahead.",
   },
 ];
+
 
 const IG_POSTS = [
   { image: storyPort, title: "Coastal shipping project gets Centre's nod" },
