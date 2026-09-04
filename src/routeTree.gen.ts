@@ -12,9 +12,10 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as InstagramRouteImport } from './routes/instagram'
-import { Route as StoriesRouteImport } from './routes/stories'
 import { Route as InterviewsIndexRouteImport } from './routes/interviews.index'
 import { Route as InterviewsSlugRouteImport } from './routes/interviews.$slug'
+import { Route as StoriesIndexRouteImport } from './routes/stories.index'
+import { Route as StoriesSlugRouteImport } from './routes/stories.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -31,11 +32,6 @@ const InstagramRoute = InstagramRouteImport.update({
   path: '/instagram',
   getParentRoute: () => rootRouteImport,
 } as any)
-const StoriesRoute = StoriesRouteImport.update({
-  id: '/stories',
-  path: '/stories',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const InterviewsIndexRoute = InterviewsIndexRouteImport.update({
   id: '/interviews/',
   path: '/interviews/',
@@ -46,31 +42,44 @@ const InterviewsSlugRoute = InterviewsSlugRouteImport.update({
   path: '/interviews/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StoriesIndexRoute = StoriesIndexRouteImport.update({
+  id: '/stories/',
+  path: '/stories/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoriesSlugRoute = StoriesSlugRouteImport.update({
+  id: '/stories/$slug',
+  path: '/stories/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/stories': typeof StoriesRoute
   '/interviews/$slug': typeof InterviewsSlugRoute
+  '/stories/$slug': typeof StoriesSlugRoute
   '/interviews/': typeof InterviewsIndexRoute
+  '/stories/': typeof StoriesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/stories': typeof StoriesRoute
   '/interviews/$slug': typeof InterviewsSlugRoute
+  '/stories/$slug': typeof StoriesSlugRoute
   '/interviews': typeof InterviewsIndexRoute
+  '/stories': typeof StoriesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/stories': typeof StoriesRoute
   '/interviews/$slug': typeof InterviewsSlugRoute
+  '/stories/$slug': typeof StoriesSlugRoute
   '/interviews/': typeof InterviewsIndexRoute
+  '/stories/': typeof StoriesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -78,34 +87,38 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/instagram'
-    | '/stories'
     | '/interviews/$slug'
+    | '/stories/$slug'
     | '/interviews/'
+    | '/stories/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/instagram'
-    | '/stories'
     | '/interviews/$slug'
+    | '/stories/$slug'
     | '/interviews'
+    | '/stories'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/instagram'
-    | '/stories'
     | '/interviews/$slug'
+    | '/stories/$slug'
     | '/interviews/'
+    | '/stories/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   InstagramRoute: typeof InstagramRoute
-  StoriesRoute: typeof StoriesRoute
   InterviewsSlugRoute: typeof InterviewsSlugRoute
+  StoriesSlugRoute: typeof StoriesSlugRoute
   InterviewsIndexRoute: typeof InterviewsIndexRoute
+  StoriesIndexRoute: typeof StoriesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -131,13 +144,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InstagramRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/stories': {
-      id: '/stories'
-      path: '/stories'
-      fullPath: '/stories'
-      preLoaderRoute: typeof StoriesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/interviews/': {
       id: '/interviews/'
       path: '/interviews'
@@ -152,6 +158,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InterviewsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/stories/': {
+      id: '/stories/'
+      path: '/stories'
+      fullPath: '/stories/'
+      preLoaderRoute: typeof StoriesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stories/$slug': {
+      id: '/stories/$slug'
+      path: '/stories/$slug'
+      fullPath: '/stories/$slug'
+      preLoaderRoute: typeof StoriesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -159,9 +179,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   InstagramRoute: InstagramRoute,
-  StoriesRoute: StoriesRoute,
   InterviewsSlugRoute: InterviewsSlugRoute,
+  StoriesSlugRoute: StoriesSlugRoute,
   InterviewsIndexRoute: InterviewsIndexRoute,
+  StoriesIndexRoute: StoriesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

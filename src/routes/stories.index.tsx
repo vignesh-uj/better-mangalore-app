@@ -1,14 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
+import { STORIES } from "@/data/stories";
 import heroStories from "@/assets/hero-stories.jpg";
-import heroAnganwadi from "@/assets/hero-anganwadi.jpg";
-import storyPort from "@/assets/story-port.jpg";
-import storySme from "@/assets/story-sme.jpg";
-import storyStartup from "@/assets/story-startup.jpg";
-import storyInfra from "@/assets/story-infra.jpg";
 
-export const Route = createFileRoute("/stories")({
+export const Route = createFileRoute("/stories/")({
   head: () => ({
     meta: [
       { title: "Stories | Better Mangalore" },
@@ -27,43 +23,6 @@ export const Route = createFileRoute("/stories")({
   component: Stories,
 });
 
-const STORIES = [
-  {
-    image: heroAnganwadi,
-    tags: "City • Education",
-    title: "What if every Anganwadi felt like an Ajjimane?",
-    lead: "Inside Bengre's child-friendly experiment in public education.",
-    body: "A new approach to the traditional Anganwadi combines child-centric spaces, sustainability and the warmth of a grandmother's home.",
-  },
-  {
-    image: storyPort,
-    tags: "Business • Infrastructure",
-    title: "Why Mangaluru is becoming increasingly important to India's energy security",
-    lead: null,
-    body: "Mangaluru has long been an important industrial and port city. New developments are strengthening its role in India's wider energy infrastructure.",
-  },
-  {
-    image: storySme,
-    tags: "Business",
-    title: "Mangaluru's SMEs are going global",
-    lead: null,
-    body: "Local businesses are scaling new markets with innovation, partnerships and digital transformation.",
-  },
-  {
-    image: storyStartup,
-    tags: "Startups",
-    title: "New startup accelerator to support early-stage founders in Mangaluru",
-    lead: null,
-    body: "A collaborative initiative to mentor, fund and connect startups with the right networks.",
-  },
-  {
-    image: storyInfra,
-    tags: "City",
-    title: "Projects shaping Mangaluru's next decade",
-    lead: null,
-    body: "Key infrastructure and urban upgrades set to improve mobility, liveability and economic growth.",
-  },
-];
 
 function Stories() {
   return (
@@ -94,13 +53,15 @@ function Stories() {
       <section className="mx-auto max-w-[1400px] px-4 py-12 md:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {STORIES.map((s) => (
-            <article
-              key={s.title}
+            <Link
+              key={s.slug}
+              to="/stories/$slug"
+              params={{ slug: s.slug }}
               className="group flex flex-col border border-border bg-card transition-shadow hover:shadow-[0_12px_30px_-14px_rgba(17,17,17,0.35)]"
             >
               <img
                 src={s.image}
-                alt={s.title}
+                alt={s.imageAlt}
                 loading="lazy"
                 width={900}
                 height={640}
@@ -117,7 +78,7 @@ function Stories() {
                   Read story <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
