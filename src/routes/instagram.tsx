@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Instagram, Linkedin, Mail, Play } from "lucide-react";
+import { ArrowRight, Instagram, Play } from "lucide-react";
 import { PageShell, Slashes } from "@/components/PageShell";
 import { LogoMark } from "@/components/Logo";
 import storyPort from "@/assets/story-port.jpg";
@@ -158,63 +158,6 @@ function InstagramPage() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-surface">
-        <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-4 py-10 md:px-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-start gap-4">
-            <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
-              <Mail className="size-5" />
-            </span>
-            <div>
-              <h2 className="headline-sm text-ink">Stay in the loop</h2>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Get the best of Better Mangalore delivered to your inbox.
-              </p>
-            </div>
-          </div>
-
-          <form
-            className="flex w-full max-w-md overflow-hidden rounded-full bg-background shadow-sm"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <label htmlFor="newsletter-email" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="newsletter-email"
-              type="email"
-              required
-              placeholder="Enter your email address"
-              className="flex-1 bg-transparent px-5 py-3 text-sm outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-primary px-6 text-sm font-bold uppercase tracking-wide text-primary-foreground transition-colors hover:bg-ink"
-            >
-              Subscribe
-            </button>
-          </form>
-
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-bold uppercase tracking-wide text-ink">Follow us</span>
-            {[
-              { Icon: Instagram, href: "https://instagram.com/bettermangalore", label: "Instagram" },
-              { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { Icon: Mail, href: "mailto:hello@bettermangalore.com", label: "Email" },
-            ].map(({ Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex size-9 items-center justify-center rounded-full border border-primary text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
-              >
-                <Icon className="size-4" />
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
     </PageShell>
   );
 }
