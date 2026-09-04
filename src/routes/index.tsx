@@ -59,21 +59,25 @@ function heroPortSlide() {
 
 const LATEST = [
   {
+    slug: "mangaluru-india-energy-security",
     image: storyPort,
     tags: "Business",
     title: "Why Mangaluru is becoming increasingly important to India's energy security",
   },
   {
+    slug: "anganwadi-ajjimane-bengre",
     image: heroAnganwadi,
     tags: "City • Education",
     title: "What if every Anganwadi felt like an Ajjimane? Inside Bengre's child-friendly experiment",
   },
   {
+    slug: "startup-accelerator-mangaluru",
     image: storyStartup,
     tags: "Startups",
     title: "New startup accelerator to support early-stage founders in Mangaluru",
   },
   {
+    slug: "projects-shaping-mangalurus-next-decade",
     image: storyInfra,
     tags: "City • Infrastructure",
     title: "4 key infrastructure projects set to transform Mangaluru over the next few years",
@@ -177,7 +181,7 @@ function Home() {
           />
           <div className="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
             {LATEST.map((s) => (
-              <article key={s.title} className="group">
+              <article key={s.slug} className="group">
                 <img
                   src={s.image}
                   alt={s.title}
@@ -191,7 +195,8 @@ function Home() {
                   {s.title}
                 </h3>
                 <Link
-                  to="/stories"
+                  to="/stories/$slug"
+                  params={{ slug: s.slug }}
                   className="mt-2 inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors group-hover:text-primary"
                 >
                   Read more <ArrowRight className="size-3.5" />
