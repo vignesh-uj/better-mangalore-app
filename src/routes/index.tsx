@@ -228,7 +228,9 @@ function Home() {
                 <p className="mt-1 text-xs font-bold text-ink">{c.role}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{c.blurb}</p>
                 <Link
-                  to="/interviews"
+                  to="/interviews/$slug"
+                  params={{ slug: c.slug }}
+
                   className="mt-3 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-primary"
                 >
                   Read the conversation <ArrowRight className="size-3.5" />
