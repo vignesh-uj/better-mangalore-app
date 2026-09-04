@@ -24,24 +24,6 @@ export const Route = createFileRoute("/interviews")({
   component: Interviews,
 });
 
-const INTERVIEWS = [
-  {
-    image: person1,
-    tags: "Business · Entrepreneurship",
-    name: "Praveen Kalbhavi",
-    role: "CEO & Co-founder, Novigo Solutions",
-    headline: "On leaving Infosys, becoming an entrepreneur and building Novigo Solutions",
-    body: "After spending two decades at Infosys, Praveen Kalbhavi chose a very different path — entrepreneurship. Speaking at Founder Connect at St. Joseph Engineering College, Mangaluru, he reflected on that transition, the realities of building a company and some of the lessons he has learned along the way.",
-  },
-  {
-    image: person2,
-    tags: "Leadership · Innovation",
-    name: "Rohan Shetty",
-    role: "Managing Director, Coastal Ventures",
-    headline: "On building teams that outlast a single good idea",
-    body: "In this conversation, Rohan Shetty shares his journey, the choices that shaped his path and the principles that continue to guide his work. From early challenges to meaningful lessons, this is a candid look at leadership, purpose and impact.",
-  },
-];
 
 function Interviews() {
   return (
