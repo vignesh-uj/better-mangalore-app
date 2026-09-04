@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { getRelatedStories, getStory } from "@/data/stories";
 
@@ -34,13 +34,6 @@ export const Route = createFileRoute("/stories/$slug")({
   component: StoryDetail,
   notFoundComponent: StoryNotFound,
 });
-
-function slugifyHeading(heading: string) {
-  return heading
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
 
 function StoryNotFound() {
   return (
@@ -97,15 +90,6 @@ function StoryDetail() {
             className="mt-8 aspect-[16/10] w-full object-cover"
           />
 
-          <blockquote className="mt-8 border-l-4 border-primary pl-5">
-            <p className="font-sans text-xl font-extrabold normal-case leading-snug text-ink">
-              &ldquo;{story.pullQuote}&rdquo;
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {story.pullQuoteBody}
-            </p>
-          </blockquote>
-
           <div className="mt-8 space-y-5">
             {story.intro.map((p) => (
               <p key={p} className="text-base leading-relaxed text-muted-foreground">
@@ -115,14 +99,9 @@ function StoryDetail() {
           </div>
 
           <div className="mt-10 space-y-10">
-            {story.sections.map((section, idx) => (
-              <section key={section.heading} id={slugifyHeading(section.heading)}>
-                <div className="flex items-baseline gap-3">
-                  <span className="text-sm font-bold text-primary">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <h2 className="headline-sm text-ink">{section.heading}</h2>
-                </div>
+            {story.sections.map((section) => (
+              <section key={section.heading}>
+                <h2 className="headline-sm text-ink">{section.heading}</h2>
                 <div className="mt-3 space-y-4">
                   {section.paragraphs.map((p) => (
                     <p key={p} className="text-base leading-relaxed text-muted-foreground">
@@ -136,38 +115,8 @@ function StoryDetail() {
         </div>
 
         <aside className="space-y-10 lg:sticky lg:top-28 lg:self-start">
-          <div className="bg-surface p-6">
-            <Quote className="size-7 fill-primary text-primary" />
-            <p className="mt-3 font-sans text-lg font-extrabold normal-case italic leading-snug text-ink">
-              &ldquo;{story.sideQuote}&rdquo;
-            </p>
-            <p className="mt-4 flex items-center gap-3 text-sm font-bold text-ink">
-              <span className="h-0.5 w-6 bg-primary" />
-              {story.sideQuoteSource}
-            </p>
-          </div>
-
-          <div>
-            <h2 className="headline-sm text-ink">In this story</h2>
-            <ol className="mt-4 space-y-3">
-              {story.sections.map((section, idx) => (
-                <li key={section.heading} className="flex items-center gap-3">
-                  <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-surface text-xs font-bold text-primary">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <a
-                    href={`#${slugifyHeading(section.heading)}`}
-                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    {section.heading}
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </div>
-
           {related.length > 0 && (
-            <div className="border-t border-border pt-8">
+            <div>
               <h2 className="headline-sm text-ink">Related stories</h2>
               <div className="mt-4 space-y-5">
                 {related.map((r) => (
@@ -202,3 +151,4 @@ function StoryDetail() {
     </PageShell>
   );
 }
+
