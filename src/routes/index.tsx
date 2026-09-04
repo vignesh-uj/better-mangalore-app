@@ -34,18 +34,21 @@ export const Route = createFileRoute("/")({
 
 const SLIDES = [
   {
+    slug: "anganwadi-ajjimane-bengre",
     image: heroAnganwadi,
     kicker: "What if every Anganwadi",
     headline: "felt like an Ajjimane?",
     sub: "Inside Bengre's child-friendly experiment in public education.",
   },
   {
+    slug: "mangaluru-india-energy-security",
     image: heroPortSlide(),
     kicker: "Why Mangaluru matters",
     headline: "to India's energy security",
     sub: "How new developments are strengthening the city's industrial role.",
   },
   {
+    slug: "projects-shaping-mangalurus-next-decade",
     image: heroStories,
     kicker: "Projects shaping",
     headline: "Mangaluru's next decade",
@@ -142,7 +145,8 @@ function Home() {
               </h1>
               <p className="mt-4 max-w-md text-base text-muted-foreground md:text-lg">{active.sub}</p>
               <Link
-                to="/stories"
+                to="/stories/$slug"
+                params={{ slug: active.slug }}
                 className="mt-6 inline-flex items-center gap-2 bg-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-primary-foreground transition-colors hover:bg-ink"
               >
                 Read the story <ArrowRight className="size-4" />
