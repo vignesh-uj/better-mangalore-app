@@ -5,7 +5,7 @@ import heroInterviews from "@/assets/hero-interviews.jpg";
 import { INTERVIEWS } from "@/data/interviews";
 
 
-export const Route = createFileRoute("/interviews")({
+export const Route = createFileRoute("/interviews/")({
   head: () => ({
     meta: [
       { title: "Conversations | Better Mangalore Interviews" },
