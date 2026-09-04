@@ -12,8 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as InstagramRouteImport } from './routes/instagram'
-import { Route as InterviewsRouteImport } from './routes/interviews'
 import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as InterviewsIndexRouteImport } from './routes/interviews.index'
+import { Route as InterviewsSlugRouteImport } from './routes/interviews.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -30,14 +31,19 @@ const InstagramRoute = InstagramRouteImport.update({
   path: '/instagram',
   getParentRoute: () => rootRouteImport,
 } as any)
-const InterviewsRoute = InterviewsRouteImport.update({
-  id: '/interviews',
-  path: '/interviews',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const StoriesRoute = StoriesRouteImport.update({
   id: '/stories',
   path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InterviewsIndexRoute = InterviewsIndexRouteImport.update({
+  id: '/interviews/',
+  path: '/interviews/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InterviewsSlugRoute = InterviewsSlugRouteImport.update({
+  id: '/interviews/$slug',
+  path: '/interviews/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -45,38 +51,61 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/interviews': typeof InterviewsRoute
   '/stories': typeof StoriesRoute
+  '/interviews/$slug': typeof InterviewsSlugRoute
+  '/interviews/': typeof InterviewsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/interviews': typeof InterviewsRoute
   '/stories': typeof StoriesRoute
+  '/interviews/$slug': typeof InterviewsSlugRoute
+  '/interviews': typeof InterviewsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/instagram': typeof InstagramRoute
-  '/interviews': typeof InterviewsRoute
   '/stories': typeof StoriesRoute
+  '/interviews/$slug': typeof InterviewsSlugRoute
+  '/interviews/': typeof InterviewsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/instagram' | '/interviews' | '/stories'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/instagram'
+    | '/stories'
+    | '/interviews/$slug'
+    | '/interviews/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/instagram' | '/interviews' | '/stories'
-  id: '__root__' | '/' | '/about' | '/instagram' | '/interviews' | '/stories'
+  to:
+    | '/'
+    | '/about'
+    | '/instagram'
+    | '/stories'
+    | '/interviews/$slug'
+    | '/interviews'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/instagram'
+    | '/stories'
+    | '/interviews/$slug'
+    | '/interviews/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   InstagramRoute: typeof InstagramRoute
-  InterviewsRoute: typeof InterviewsRoute
   StoriesRoute: typeof StoriesRoute
+  InterviewsSlugRoute: typeof InterviewsSlugRoute
+  InterviewsIndexRoute: typeof InterviewsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -102,18 +131,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InstagramRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/interviews': {
-      id: '/interviews'
-      path: '/interviews'
-      fullPath: '/interviews'
-      preLoaderRoute: typeof InterviewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/stories': {
       id: '/stories'
       path: '/stories'
       fullPath: '/stories'
       preLoaderRoute: typeof StoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/interviews/': {
+      id: '/interviews/'
+      path: '/interviews'
+      fullPath: '/interviews/'
+      preLoaderRoute: typeof InterviewsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/interviews/$slug': {
+      id: '/interviews/$slug'
+      path: '/interviews/$slug'
+      fullPath: '/interviews/$slug'
+      preLoaderRoute: typeof InterviewsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -123,8 +159,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   InstagramRoute: InstagramRoute,
-  InterviewsRoute: InterviewsRoute,
   StoriesRoute: StoriesRoute,
+  InterviewsSlugRoute: InterviewsSlugRoute,
+  InterviewsIndexRoute: InterviewsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

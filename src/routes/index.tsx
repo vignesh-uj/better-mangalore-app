@@ -82,18 +82,21 @@ const LATEST = [
 
 const CONVERSATIONS = [
   {
+    slug: "praveen-kalbhavi-novigo-solutions",
     image: person1,
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
   },
   {
+    slug: "rohan-shetty-coastal-ventures",
     image: person2,
     name: "Rohan Shetty",
     role: "Managing Director, Coastal Ventures",
     blurb: "On leadership, innovation and opportunities in the years ahead.",
   },
 ];
+
 
 const IG_POSTS = [
   { image: storyPort, title: "Coastal shipping project gets Centre's nod" },
@@ -225,7 +228,8 @@ function Home() {
                 <p className="mt-1 text-xs font-bold text-ink">{c.role}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{c.blurb}</p>
                 <Link
-                  to="/interviews"
+                  to="/interviews/$slug"
+                  params={{ slug: c.slug }}
                   className="mt-3 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-primary"
                 >
                   Read the conversation <ArrowRight className="size-3.5" />
