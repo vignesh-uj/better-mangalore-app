@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Facebook, Link2, Linkedin, Quote, Twitter } from "lucide-react";
+import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { getInterview, getRelatedInterviews } from "@/data/interviews";
 
@@ -85,37 +85,6 @@ function InterviewDetail() {
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
             {interview.standfirst}
           </p>
-
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-b border-border pb-6">
-            <div className="flex items-center gap-3">
-              <img
-                src={interview.image}
-                alt={interview.name}
-                width={96}
-                height={96}
-                className="size-11 rounded-full object-cover"
-              />
-              <div>
-                <p className="text-sm font-bold text-ink">By Better Mangalore</p>
-                <p className="text-xs text-muted-foreground">
-                  {interview.date} · {interview.readTime}
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="mr-1 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-                Share
-              </span>
-              {[Linkedin, Twitter, Facebook, Link2].map((Icon, idx) => (
-                <span
-                  key={idx}
-                  className="inline-flex size-8 items-center justify-center rounded-full bg-surface text-ink"
-                >
-                  <Icon className="size-4" />
-                </span>
-              ))}
-            </div>
-          </div>
 
           <img
             src={interview.stageImage}
