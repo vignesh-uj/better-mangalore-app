@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, MessagesSquare } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import heroInterviews from "@/assets/hero-interviews.jpg";
-import person1 from "@/assets/person-1.jpg";
-import person2 from "@/assets/person-2.jpg";
+import { INTERVIEWS } from "@/data/interviews";
+
 
 export const Route = createFileRoute("/interviews")({
   head: () => ({
