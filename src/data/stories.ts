@@ -38,8 +38,7 @@ export const STORIES: Story[] = [
     ],
     sections: [
       {
-        heading: "Designed around children
-",
+        heading: "Designed around children",
         paragraphs: [
           "The new facility has been planned with child-friendly architecture and includes open play areas, colourful walls inspired by rural life, dedicated sleeping spaces and a modern hygienic kitchen.",
           "The environment has been designed to make children feel relaxed while supporting early learning, play and rest.",
