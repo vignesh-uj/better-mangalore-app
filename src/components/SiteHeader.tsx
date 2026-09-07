@@ -16,8 +16,9 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 py-4 md:px-8 md:py-5">
-        <Logo className="h-28 md:h-36" />
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 py-2 md:px-8 md:py-3">
+        <Logo className="h-10 md:h-14" />
+
 
         <nav className="hidden items-center gap-8 lg:flex">
           {NAV.map((item) => (
