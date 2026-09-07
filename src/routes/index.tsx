@@ -65,25 +65,25 @@ const LATEST = [
     slug: "mangaluru-india-energy-security",
     image: storyPort,
     tags: "Business",
-    title: "Why Mangaluru is becoming increasingly important to India's energy security",
+    title: "Mangaluru set for major expansion in India’s strategic oil storage network",
   },
   {
     slug: "anganwadi-ajjimane-bengre",
     image: heroAnganwadi,
     tags: "City • Education",
-    title: "What if every Anganwadi felt like an Ajjimane? Inside Bengre's child-friendly experiment",
+    title: "Mangaluru’s ‘Ajjimane’ Anganwadi reimagines early childhood learning with a homely touch",
   },
   {
     slug: "startup-accelerator-mangaluru",
     image: storyStartup,
     tags: "Startups",
-    title: "New startup accelerator to support early-stage founders in Mangaluru",
+    title: "Mangaluru chosen to launch Karnataka’s first K-Combinator startup accelerator",
   },
   {
     slug: "projects-shaping-mangalurus-next-decade",
     image: storyInfra,
     tags: "City • Infrastructure",
-    title: "4 key infrastructure projects set to transform Mangaluru over the next few years",
+    title: "Projects shaping Mangaluru's next decade",
   },
 ];
 
