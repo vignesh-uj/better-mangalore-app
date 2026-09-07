@@ -18,12 +18,6 @@ export type Story = {
   lead: string | null;
   body: string;
   standfirst: string;
-  date: string;
-  readTime: string;
-  pullQuote: string;
-  pullQuoteBody: string;
-  sideQuote: string;
-  sideQuoteSource: string;
   intro: string[];
   sections: StorySection[];
 };
