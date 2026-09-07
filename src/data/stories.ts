@@ -34,11 +34,11 @@ export const STORIES: Story[] = [
     image: heroAnganwadi,
     imageAlt: "Children playing inside a redesigned Anganwadi in Bengre, Mangaluru",
     tags: "City • Education",
-    title: "What if every Anganwadi felt like an Ajjimane?",
+    title: "Mangaluru’s ‘Ajjimane’ Anganwadi reimagines early childhood learning with a homely touch.",
     lead: "Inside Bengre's child-friendly experiment in public education.",
     body: "A new approach to the traditional Anganwadi combines child-centric spaces, sustainability and the warmth of a grandmother's home.",
     standfirst:
-      "In a quiet fishing neighbourhood in Mangaluru, a redesigned Anganwadi is asking a simple question: what if the first classroom a child enters felt like their grandmother's house?",
+      "A new anganwadi model in Bengre, Mangaluru, is blending modern child-friendly infrastructure with a simple emotional idea — making children feel as comfortable as they would in their grandmother’s home.",
     date: "Sep 4, 2026",
     readTime: "8 min read",
     pullQuote:
@@ -56,7 +56,7 @@ export const STORIES: Story[] = [
         heading: "Why the old design failed children",
         paragraphs: [
           "The earlier structure had a single high window, one locked cupboard and a floor that stayed damp through the monsoon. Attendance dropped sharply between June and September.",
-          "\"Parents were not disinterested,\" one worker says. \"The room simply was not usable for half the year.\"",
+          '"Parents were not disinterested," one worker says. "The room simply was not usable for half the year."',
         ],
       },
       {
@@ -212,8 +212,7 @@ export const STORIES: Story[] = [
     date: "Aug 22, 2026",
     readTime: "6 min read",
     pullQuote: "Founders do not leave Mangaluru for weather. They leave for their first ten customers.",
-    pullQuoteBody:
-      "The programme's design leans heavily on introductions to buyers rather than on classroom sessions.",
+    pullQuoteBody: "The programme's design leans heavily on introductions to buyers rather than on classroom sessions.",
     sideQuote: "A city keeps the companies it helps early.",
     sideQuoteSource: "Accelerator programme lead",
     intro: [
@@ -301,9 +300,7 @@ export const STORIES: Story[] = [
       },
       {
         heading: "What to watch",
-        paragraphs: [
-          "Deadlines, sequencing and maintenance budgets — the three places where good plans usually fail.",
-        ],
+        paragraphs: ["Deadlines, sequencing and maintenance budgets — the three places where good plans usually fail."],
       },
     ],
   },
