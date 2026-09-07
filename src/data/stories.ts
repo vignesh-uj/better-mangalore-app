@@ -33,14 +33,8 @@ export const STORIES: Story[] = [
     body: "A new approach to the traditional Anganwadi combines child-centric spaces, sustainability and the warmth of a grandmother's home.",
     standfirst:
       "A new anganwadi model in Bengre, Mangaluru, is blending modern child-friendly infrastructure with a simple emotional idea — making children feel as comfortable as they would in their grandmother’s home.",
-    date: "Sep 4, 2026",
-    readTime: "8 min read",
-    pullQuote:
       "Children do not need instruction as much as they need a place that makes them feel safe enough to be curious.",
-    pullQuoteBody:
       "The Bengre Anganwadi rethinks colour, light, storage and seating so that a two-year-old can move through the space without an adult telling them where to go.",
-    sideQuote: "If a child wants to come back tomorrow, the design has already worked.",
-    sideQuoteSource: "Project architect, Bengre Anganwadi",
     intro: [
       "Anganwadis are the first point of contact between the state and a young child — nutrition, immunisation, early learning and, often, the first experience of being outside home. Most of them, however, are single rooms designed for storage rather than for children.",
       "In Bengre, a coastal ward of Mangaluru, a small group of architects, Anganwadi workers and parents set out to change that. The result is a building that borrows less from schools and more from an ajjimane — a grandmother's house.",
@@ -93,14 +87,8 @@ export const STORIES: Story[] = [
     body: "Mangaluru has long been an important industrial and port city. New developments are strengthening its role in India's wider energy infrastructure.",
     standfirst:
       "Refining capacity, strategic crude reserves, an LPG import terminal and a deep-water port put Mangaluru at the centre of how India stores and moves energy.",
-    date: "Sep 2, 2026",
-    readTime: "9 min read",
-    pullQuote:
       "Energy security is less about producing more and more about being able to store, move and switch quickly.",
-    pullQuoteBody:
       "Mangaluru's advantage is not one asset but the density of them — refinery, caverns, terminals and berths within a few kilometres of each other.",
-    sideQuote: "The coast is where India's energy logistics quietly gets decided.",
-    sideQuoteSource: "Port sector analyst",
     intro: [
       "For decades Mangaluru was described as an industrial port city — refinery, fertiliser, chemicals, cargo. That description is now incomplete.",
       "A cluster of energy infrastructure has grown around the city, and each new addition makes the next one more useful.",
@@ -149,13 +137,7 @@ export const STORIES: Story[] = [
     body: "Local businesses are scaling new markets with innovation, partnerships and digital transformation.",
     standfirst:
       "Quietly, without press conferences, a set of Mangaluru small and medium enterprises now ship to West Asia, Africa and Europe.",
-    date: "Aug 28, 2026",
-    readTime: "7 min read",
-    pullQuote: "We stopped competing on price the day we started competing on delivery dates.",
-    pullQuoteBody:
       "Owners describe a shift from job-work contracts to owning products, certifications and customer relationships.",
-    sideQuote: "Exports are a discipline, not a destination.",
-    sideQuoteSource: "Managing partner, coastal engineering firm",
     intro: [
       "Mangaluru's industrial base has long been built on smaller units — engineering, food processing, cashew, plastics, packaging.",
       "What has changed is ambition: several of these firms now treat exports as their primary market rather than an occasional order.",
@@ -203,12 +185,6 @@ export const STORIES: Story[] = [
     body: "A collaborative initiative to mentor, fund and connect startups with the right networks.",
     standfirst:
       "A new accelerator wants to keep coastal founders building at home by fixing the three things they usually leave for: mentors, money and customers.",
-    date: "Aug 22, 2026",
-    readTime: "6 min read",
-    pullQuote: "Founders do not leave Mangaluru for weather. They leave for their first ten customers.",
-    pullQuoteBody: "The programme's design leans heavily on introductions to buyers rather than on classroom sessions.",
-    sideQuote: "A city keeps the companies it helps early.",
-    sideQuoteSource: "Accelerator programme lead",
     intro: [
       "Mangaluru produces a steady stream of engineering and management graduates, and a fair number of them start companies.",
       "Historically, those companies relocated once they raised their first round. The new accelerator is an attempt to interrupt that pattern.",
@@ -256,13 +232,7 @@ export const STORIES: Story[] = [
     body: "Key infrastructure and urban upgrades set to improve mobility, liveability and economic growth.",
     standfirst:
       "Flyovers, drainage, waterfront access and transit upgrades are all underway at once. Together they will decide how the city feels in 2035.",
-    date: "Aug 15, 2026",
-    readTime: "10 min read",
-    pullQuote: "Cities are not changed by single projects but by whether the projects talk to each other.",
-    pullQuoteBody:
       "Sequencing matters more than budgets — a flyover finished before its drainage is a new problem, not a solution.",
-    sideQuote: "Ask not what is being built, but what it connects.",
-    sideQuoteSource: "Urban planner, coastal Karnataka",
     intro: [
       "Mangaluru is in the middle of its busiest construction decade in living memory.",
       "The projects range from junction redesigns to stormwater networks, and their combined effect will be felt long after the barricades come down.",
