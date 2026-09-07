@@ -9,6 +9,7 @@ import storyPort from "@/assets/story-port.jpg";
 import storyInfra from "@/assets/story-infra.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyAirport from "@/assets/story-airport.jpg";
+import storySme from "@/assets/story-sme.jpg";
 import person1 from "@/assets/person-1.jpg";
 import person2 from "@/assets/person-2.jpg";
 
@@ -80,10 +81,10 @@ const LATEST = [
     title: "Mangaluru chosen to launch Karnataka’s first K-Combinator startup accelerator",
   },
   {
-    slug: "projects-shaping-mangalurus-next-decade",
-    image: storyInfra,
-    tags: "City • Infrastructure",
-    title: "Projects shaping Mangaluru's next decade",
+    slug: "mangaluru-smes-going-global",
+    image: storySme,
+    tags: "Business",
+    title: "Could Mangaluru become Karnataka’s next Global Capability Centre destination?",
   },
 ];
 
