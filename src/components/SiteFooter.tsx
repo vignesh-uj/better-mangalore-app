@@ -34,7 +34,7 @@ export function SiteFooter() {
 
         <div className="flex items-center gap-3">
           {[
-            { Icon: Instagram, href: "https://instagram.com/bettermangalore", label: "Instagram" },
+            { Icon: Instagram, href: "https://instagram.com/better_mangalore", label: "Instagram" },
             { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
             { Icon: Mail, href: "mailto:hello@bettermangalore.com", label: "Email" },
           ].map(({ Icon, href, label }) => (

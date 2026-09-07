@@ -16,7 +16,7 @@ export const Route = createFileRoute("/instagram")({
       {
         name: "description",
         content:
-          "Daily stories, visuals and updates from across Mangaluru. Follow @bettermangalore for real-time updates.",
+          "Daily stories, visuals and updates from across Mangaluru. Follow @better_mangalore for real-time updates.",
       },
       { property: "og:title", content: "From Instagram | Better Mangalore" },
       {
@@ -84,12 +84,12 @@ function InstagramPage() {
               </span>
               <div>
                 <a
-                  href="https://instagram.com/bettermangalore"
+                  href="https://instagram.com/better_mangalore"
                   target="_blank"
                   rel="noreferrer"
                   className="block text-lg font-bold text-primary"
                 >
-                  Follow @bettermangalore
+                  Follow @better_mangalore
                 </a>
                 <p className="text-sm text-muted-foreground">for real-time updates and stories.</p>
               </div>
@@ -108,7 +108,7 @@ function InstagramPage() {
           <h2 className="headline-lg text-ink">Latest Posts</h2>
           <span className="h-px flex-1 bg-primary" />
           <a
-            href="https://instagram.com/bettermangalore"
+            href="https://instagram.com/better_mangalore"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-primary"

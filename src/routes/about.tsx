@@ -172,12 +172,12 @@ function About() {
             <li className="flex items-center gap-3">
               <Instagram className="size-5 text-ink" />
               <a
-                href="https://instagram.com/bettermangalore"
+                href="https://instagram.com/better_mangalore"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-primary"
               >
-                @bettermangalore
+                @better_mangalore
               </a>
             </li>
             <li className="flex items-center gap-3">
