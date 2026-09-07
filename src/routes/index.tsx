@@ -81,10 +81,10 @@ const LATEST = [
     title: "Mangaluru chosen to launch Karnataka’s first K-Combinator startup accelerator",
   },
   {
-    slug: "projects-shaping-mangalurus-next-decade",
-    image: storyInfra,
-    tags: "City • Infrastructure",
-    title: "Projects shaping Mangaluru's next decade",
+    slug: "mangaluru-smes-going-global",
+    image: storySme,
+    tags: "Business",
+    title: "Could Mangaluru become Karnataka’s next Global Capability Centre destination?",
   },
 ];
 
