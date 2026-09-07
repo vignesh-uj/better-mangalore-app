@@ -152,46 +152,86 @@ export const STORIES: Story[] = [
   {
     slug: "mangaluru-smes-going-global",
     image: storySme,
-    imageAlt: "Workers on a manufacturing floor at a Mangaluru small enterprise",
+    imageAlt: "Modern office space in Mangaluru with professionals working at desks",
     tags: "Business",
-    title: "Mangaluru's SMEs are going global",
+    title: "Could Mangaluru become Karnataka’s next Global Capability Centre destination?",
     lead: null,
-    body: "Local businesses are scaling new markets with innovation, partnerships and digital transformation.",
+    body: "Policy recognition, talent potential and sector strengths are putting Mangaluru on Karnataka’s GCC map.",
     standfirst:
-      "Quietly, without press conferences, a set of Mangaluru small and medium enterprises now ship to West Asia, Africa and Europe.",
+      "Mangaluru is beginning to appear in a conversation that, until recently, was dominated by Bengaluru, Hyderabad, Pune, Chennai and other large technology hubs.",
     intro: [
-      "Mangaluru's industrial base has long been built on smaller units — engineering, food processing, cashew, plastics, packaging.",
-      "What has changed is ambition: several of these firms now treat exports as their primary market rather than an occasional order.",
+      "Mangaluru is beginning to appear in a conversation that, until recently, was dominated by Bengaluru, Hyderabad, Pune, Chennai and other large technology hubs: Global Capability Centres, or GCCs.",
+      "Two developments make the timing particularly interesting. Union Finance Minister Nirmala Sitharaman recently referred to Mangaluru while speaking about the spread of GCC investments beyond India’s largest metros. At the same time, Karnataka’s GCC Policy 2024–29 has formally identified Mangaluru as one of the cities to be developed under the State’s Beyond Bengaluru strategy.",
+      "That does not mean major multinational companies are about to rush into the city. But it does mean Mangaluru is now part of a policy-backed effort to distribute more high-value global business operations across Karnataka.",
+      "This is the first story in a new series looking at industries that could realistically expand in Mangaluru over the coming years.",
     ],
     sections: [
       {
-        heading: "From job work to products",
+        heading: "First, what exactly is a GCC?",
         paragraphs: [
-          "Firms that once machined parts to someone else's drawing now sell finished assemblies under their own name, which changes margins and bargaining power.",
+          "A Global Capability Centre is essentially an overseas office established and operated directly by a multinational company. Unlike a traditional outsourcing arrangement, the employees in a GCC work for the multinational itself.",
+          "A global bank, retailer, healthcare company, manufacturer or insurance company might establish a centre in India to handle functions such as software development, finance and accounting, human resources, procurement and supply chain, data analytics, engineering support, research and development, cloud operations, and AI and automation.",
+          "India has become one of the world’s biggest GCC markets. Industry estimates across 2025 and 2026 place the number of GCCs in India at more than 1,700, employing close to 1.9 million people and generating annual revenues of over $64 billion. The sector is expected to continue expanding rapidly through the end of this decade.",
         ],
       },
       {
-        heading: "Certification as the entry ticket",
+        heading: "Why Mangaluru is suddenly relevant",
         paragraphs: [
-          "Buyers abroad ask for audits and documentation before they ask for samples. Getting certified is slow, expensive and non-negotiable.",
+          "The strongest reason is not speculation. It is policy. Karnataka’s GCC Policy 2024–29 specifically identifies Mangaluru as one of the locations to be promoted outside Bengaluru, along with cities such as Mysuru, Hubballi-Dharwad-Belagavi, Tumakuru, Shivamogga and Kalaburagi.",
+          "The policy offers incentives to companies establishing GCC operations in these locations. Among the benefits outlined are support towards office rentals, employee EPF contributions, telecom expenditure and R&D infrastructure. There are also dedicated funds intended to encourage innovation and stronger partnerships between GCCs, startups and academic institutions.",
+          "Karnataka’s larger target is ambitious: the State wants to attract hundreds of new GCCs, create several lakh jobs and significantly increase the economic contribution of the sector by 2029. Mangaluru is not the centrepiece of that target — Bengaluru clearly remains Karnataka’s dominant GCC destination. But the fact that Mangaluru has been specifically included means the city now has a policy framework it can actively use while pitching to potential investors.",
         ],
       },
       {
-        heading: "Digital sales and small teams",
+        heading: "Mangaluru does have a few genuine advantages",
         paragraphs: [
-          "Two-person export desks running on email, video calls and marketplace listings have replaced expensive travel-heavy sales cycles.",
+          "The city’s strongest case is probably not that it is simply cheaper than Bengaluru. That argument alone is unlikely to attract serious global companies. Mangaluru needs a more differentiated pitch.",
+          "One advantage is its talent base. The city has previously ranked strongly in national employability studies, and the wider region produces a steady stream of engineering, management, commerce and healthcare graduates. Institutions such as NITK Surathkal, together with several engineering colleges in and around the region, provide a technical talent pipeline.",
+          "Mangaluru also already has an IT industry, even if it is relatively small compared with Bengaluru. Companies such as Cognizant and Mphasis have operations in the region, while home-grown technology companies have shown that software businesses can be built and scaled from coastal Karnataka. That existing ecosystem matters. Large companies are more comfortable entering cities where some combination of technical talent, experienced employees, office infrastructure and service providers already exists.",
         ],
       },
       {
-        heading: "The talent question",
+        heading: "Healthcare and banking could become Mangaluru’s niche",
         paragraphs: [
-          "Retaining engineers who could move to Bengaluru remains the hardest part. Firms are answering with ownership, flexible work and faster growth paths.",
+          "Mangaluru may also have an opportunity to position itself around sectors where it already has unusually deep local expertise. Healthcare is an obvious example. The city has a large concentration of hospitals, medical colleges and healthcare institutions. That could make Mangaluru relevant for healthcare-related GCC work involving areas such as digital health, medical operations, analytics, finance, claims processing or technology support.",
+          "Banking and financial services are another possibility. Mangaluru has a long banking history and remains home to major financial institutions. That legacy could help the city develop talent for BFSI-oriented support operations, especially in finance, compliance, technology and shared services.",
+          "In other words, Mangaluru’s strongest GCC pitch may eventually be: not ‘we are cheaper than Bengaluru’, but ‘we have specialised talent in a few sectors where global companies already need scale.’",
         ],
       },
       {
-        heading: "What would help next",
+        heading: "What kind of jobs are likely to arrive first?",
         paragraphs: [
-          "Shared testing facilities, faster customs handling at the port and cheaper working capital top almost every owner's list.",
+          "This is where expectations need to remain realistic. A company setting up its first operation in a smaller city is unlikely to immediately move its most sensitive AI research, advanced product architecture or strategic R&D teams there. Those functions usually remain concentrated in mature GCC hubs.",
+          "A more likely starting point for Mangaluru would be functions such as finance and accounting operations, HR shared services, procurement, engineering support, quality functions, application support, cloud operations, analytics and other structured business processes.",
+          "Over time, if companies find that the talent pool, infrastructure and retention levels are strong, more complex work can follow. That is how many GCC locations evolve.",
+        ],
+      },
+      {
+        heading: "One important gap remains",
+        paragraphs: [
+          "For all the positive signals, Mangaluru still lacks something that cities such as Coimbatore and Thiruvananthapuram can already showcase: a visible cluster of large, well-known GCCs operating at scale. Those cities can point to major multinational capability centres employing thousands of professionals. Mangaluru, at least based on publicly visible information, cannot yet make the same claim.",
+          "That distinction matters. Today, Mangaluru has policy support, talent potential and sector strengths. What it does not yet have is a long list of multinational GCC success stories. That is why the opportunity should be viewed as emerging rather than established.",
+        ],
+      },
+      {
+        heading: "What the next five years could look like",
+        paragraphs: [
+          "A realistic outcome would not be Mangaluru suddenly competing with Bengaluru for hundreds of GCCs. A more meaningful success would be attracting a handful of credible global companies that establish operations employing a few hundred people each.",
+          "If those early centres perform well, they could become reference cases for other companies considering the city. That is often how a new GCC ecosystem begins. One multinational enters. Others watch. The talent pool deepens. Specialist vendors and recruiters follow. More office space gets created. And eventually, the location starts becoming part of mainstream site-selection discussions.",
+        ],
+      },
+      {
+        heading: "The opportunity is real, but execution will decide everything",
+        paragraphs: [
+          "Mangaluru today has more going for it than it did a few years ago. It has been named in Karnataka’s GCC expansion policy. There are financial incentives available. The city has strong educational institutions, relatively good employability indicators and potential sector specialisations in healthcare, banking and technology. But none of those factors automatically produces investment.",
+          "The real test will be whether local industry bodies, government agencies, educational institutions, real estate developers and technology companies can collectively make a convincing case to global enterprises.",
+          "The next few years should therefore be less about celebrating Mangaluru as a GCC hub and more about answering a harder question:",
+        ],
+      },
+      {
+        heading: "Can Mangaluru convert policy recognition into actual companies, actual offices and actual high-value jobs?",
+        paragraphs: [
+          "That is the opportunity worth watching.",
         ],
       },
     ],
