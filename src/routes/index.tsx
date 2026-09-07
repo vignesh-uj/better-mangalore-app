@@ -263,7 +263,7 @@ function Home() {
               Daily stories, visuals and updates from across Mangaluru.
             </p>
             <Link to="/instagram" className="mt-3 inline-block font-bold text-primary">
-              Follow @bettermangalore
+              Follow @better_mangalore
             </Link>
           </div>
 
