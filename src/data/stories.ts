@@ -33,8 +33,6 @@ export const STORIES: Story[] = [
     body: "A new approach to the traditional Anganwadi combines child-centric spaces, sustainability and the warmth of a grandmother's home.",
     standfirst:
       "A new anganwadi model in Bengre, Mangaluru, is blending modern child-friendly infrastructure with a simple emotional idea — making children feel as comfortable as they would in their grandmother’s home.",
-      "Children do not need instruction as much as they need a place that makes them feel safe enough to be curious.",
-      "The Bengre Anganwadi rethinks colour, light, storage and seating so that a two-year-old can move through the space without an adult telling them where to go.",
     intro: [
       "Anganwadis are the first point of contact between the state and a young child — nutrition, immunisation, early learning and, often, the first experience of being outside home. Most of them, however, are single rooms designed for storage rather than for children.",
       "In Bengre, a coastal ward of Mangaluru, a small group of architects, Anganwadi workers and parents set out to change that. The result is a building that borrows less from schools and more from an ajjimane — a grandmother's house.",
@@ -87,8 +85,6 @@ export const STORIES: Story[] = [
     body: "Mangaluru has long been an important industrial and port city. New developments are strengthening its role in India's wider energy infrastructure.",
     standfirst:
       "Refining capacity, strategic crude reserves, an LPG import terminal and a deep-water port put Mangaluru at the centre of how India stores and moves energy.",
-      "Energy security is less about producing more and more about being able to store, move and switch quickly.",
-      "Mangaluru's advantage is not one asset but the density of them — refinery, caverns, terminals and berths within a few kilometres of each other.",
     intro: [
       "For decades Mangaluru was described as an industrial port city — refinery, fertiliser, chemicals, cargo. That description is now incomplete.",
       "A cluster of energy infrastructure has grown around the city, and each new addition makes the next one more useful.",
@@ -137,7 +133,6 @@ export const STORIES: Story[] = [
     body: "Local businesses are scaling new markets with innovation, partnerships and digital transformation.",
     standfirst:
       "Quietly, without press conferences, a set of Mangaluru small and medium enterprises now ship to West Asia, Africa and Europe.",
-      "Owners describe a shift from job-work contracts to owning products, certifications and customer relationships.",
     intro: [
       "Mangaluru's industrial base has long been built on smaller units — engineering, food processing, cashew, plastics, packaging.",
       "What has changed is ambition: several of these firms now treat exports as their primary market rather than an occasional order.",
@@ -232,7 +227,6 @@ export const STORIES: Story[] = [
     body: "Key infrastructure and urban upgrades set to improve mobility, liveability and economic growth.",
     standfirst:
       "Flyovers, drainage, waterfront access and transit upgrades are all underway at once. Together they will decide how the city feels in 2035.",
-      "Sequencing matters more than budgets — a flyover finished before its drainage is a new problem, not a solution.",
     intro: [
       "Mangaluru is in the middle of its busiest construction decade in living memory.",
       "The projects range from junction redesigns to stormwater networks, and their combined effect will be felt long after the barricades come down.",
