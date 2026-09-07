@@ -262,9 +262,14 @@ function Home() {
             <p className="mt-3 text-sm text-muted-foreground">
               Daily stories, visuals and updates from across Mangaluru.
             </p>
-            <Link to="/instagram" className="mt-3 inline-block font-bold text-primary">
+            <a
+              href="https://instagram.com/better_mangalore"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-block font-bold text-primary"
+            >
               Follow @better_mangalore
-            </Link>
+            </a>
           </div>
 
           <div className="grid flex-1 grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
@@ -273,12 +278,14 @@ function Home() {
             ))}
           </div>
 
-          <Link
-            to="/instagram"
+          <a
+            href="https://instagram.com/better_mangalore"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 border-2 border-primary px-6 py-3 text-sm font-bold uppercase tracking-wide text-primary transition-colors hover:bg-primary hover:text-primary-foreground xl:shrink-0"
           >
             View on Instagram <ArrowRight className="size-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </PageShell>
