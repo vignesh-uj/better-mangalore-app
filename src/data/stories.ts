@@ -28,8 +28,8 @@ export const STORIES: Story[] = [
     image: heroAnganwadi,
     imageAlt: "Children playing inside a redesigned Anganwadi in Bengre, Mangaluru",
     tags: "City • Education",
-    title: "Mangaluru’s ‘Ajjimane’ Anganwadi reimagines early childhood learning with a homely touch
-",
+    title:
+      "Mangaluru’s ‘Ajjimane’ Anganwadi reimagines early childhood learning with a homely touch",
     lead: "Inside Bengre's child-friendly experiment in public education.",
     body: "A new approach to the traditional Anganwadi combines child-centric spaces, sustainability and the warmth of a grandmother's home.",
     standfirst:
