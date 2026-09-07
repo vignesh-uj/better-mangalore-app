@@ -34,7 +34,8 @@ export const STORIES: Story[] = [
     standfirst: "",
     intro: [
       "A new anganwadi model in Bengre, Mangaluru, is blending modern child-friendly infrastructure with a simple emotional idea — making children feel as comfortable as they would in their grandmother’s home.",
-      "The idea is to move beyond the conventional anganwadi setup and create a space that feels warm, safe and inviting for young children. ",
+      "Named ‘Ajjimane’, meaning grandmother’s house, the centre has been developed by Nirmiti Kendra with around ₹25 lakh in CSR support from Mangalore Refinery and Petrochemicals Ltd. (MRPL).",
+      "The idea is to move beyond the conventional anganwadi setup and create a space that feels warm, safe and inviting for young children.",
     ],
     sections: [
       {
@@ -43,35 +44,25 @@ export const STORIES: Story[] = [
           "The new facility has been planned with child-friendly architecture and includes open play areas, colourful walls inspired by rural life, dedicated sleeping spaces and a modern hygienic kitchen.",
           "The environment has been designed to make children feel relaxed while supporting early learning, play and rest.",
           "According to Geetha, the anganwadi teacher at the Bengre centre, the name ‘Ajjimane’ reflects the feeling the project hopes to create.",
-          "The intention is for children to walk into the centre with the same comfort and happiness they associate with visiting their grandmother’s house."
+          "The intention is for children to walk into the centre with the same comfort and happiness they associate with visiting their grandmother’s house.",
         ],
       },
       {
-        heading: "Borrowing from the ajjimane",
+        heading: "Sustainability built into the centre",
         paragraphs: [
-          "The redesign uses a sloping tiled roof, a shaded verandah, low sills a child can sit on and open shelves at knee height. Nothing is locked away, which means children choose their own material.",
-          "Cross ventilation replaced the single window, and the floor was raised to keep the monsoon out.",
+          "The anganwadi also incorporates several environmentally conscious features. These include solar lighting, rainwater harvesting and vermicomposting.",
+          "Organic waste is converted into manure and used in the fruit and vegetable garden maintained within the premises.",
+          "Produce grown at the centre is then used to complement the children’s meals.",
+          "The garden also includes fruit-bearing plants such as rose apple, with harvested fruits being shared with the children.",
         ],
       },
       {
-        heading: "Sustainability without a premium",
+        heading: "More than a classroom",
         paragraphs: [
-          "Locally fired tiles, laterite and reclaimed timber kept costs close to the standard government allocation, which matters if the model is to be repeated across the district.",
-          "Rainwater from the roof feeds a small kitchen garden that children help maintain.",
-        ],
-      },
-      {
-        heading: "What changed for the children",
-        paragraphs: [
-          "Attendance during the monsoon months has improved, and workers report that children now stay longer after their meal instead of leaving with their parents.",
-          "Teachers also spend less time policing movement and more time on activities.",
-        ],
-      },
-      {
-        heading: "Can this scale across the district?",
-        paragraphs: [
-          "The team is documenting the design as an open template so that panchayats can adapt it without commissioning fresh drawings.",
-          "The bigger question is maintenance — good buildings still need budgets after inauguration day.",
+          "The Ajjimane model attempts to bring nutrition, sustainability, learning and emotional well-being together within one early-childhood space.",
+          "For children, especially in the crucial formative years, the surroundings in which they learn can be just as important as the lessons themselves.",
+          "By combining modern infrastructure with a familiar, homely atmosphere, the Bengre initiative offers an interesting model for how anganwadis can evolve.",
+          "For Mangaluru, Ajjimane is a small but thoughtful example of how CSR-led public infrastructure can go beyond construction and focus on the actual experience of the people it is meant to serve.",
         ],
       },
     ],
