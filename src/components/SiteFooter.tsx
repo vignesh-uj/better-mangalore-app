@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { LogoMark } from "./Logo";
 
 const LINKS = [
@@ -33,22 +33,15 @@ export function SiteFooter() {
         </nav>
 
         <div className="flex items-center gap-3">
-          {[
-            { Icon: Instagram, href: "https://instagram.com/better_mangalore", label: "Instagram" },
-            { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-            { Icon: Mail, href: "mailto:hello@bettermangalore.com", label: "Email" },
-          ].map(({ Icon, href, label }) => (
-            <a
-              key={label}
-              href={href}
-              aria-label={label}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex size-9 items-center justify-center rounded-full border border-background/40 text-background transition-colors hover:border-primary hover:text-primary"
-            >
-              <Icon className="size-4" />
-            </a>
-          ))}
+          <a
+            href="https://instagram.com/better_mangalore"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex size-9 items-center justify-center rounded-full border border-background/40 text-background transition-colors hover:border-primary hover:text-primary"
+          >
+            <Instagram className="size-4" />
+          </a>
         </div>
       </div>
       <div className="border-t border-background/15 px-4 py-4 text-center text-xs text-background/60 md:px-8">
