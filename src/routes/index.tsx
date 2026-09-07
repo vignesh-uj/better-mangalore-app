@@ -9,6 +9,7 @@ import storyPort from "@/assets/story-port.jpg";
 import storyInfra from "@/assets/story-infra.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyAirport from "@/assets/story-airport.jpg";
+import storySme from "@/assets/story-sme.jpg";
 import person1 from "@/assets/person-1.jpg";
 import person2 from "@/assets/person-2.jpg";
 
