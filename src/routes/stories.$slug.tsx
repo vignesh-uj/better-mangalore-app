@@ -35,6 +35,16 @@ export const Route = createFileRoute("/stories/$slug")({
   notFoundComponent: StoryNotFound,
 });
 
+function renderRichText(text: string) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i} className="text-ink">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
 function StoryNotFound() {
   return (
     <PageShell>
@@ -93,7 +103,7 @@ function StoryDetail() {
           <div className="mt-8 space-y-5">
             {story.intro.map((p) => (
               <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                {p}
+                {renderRichText(p)}
               </p>
             ))}
           </div>
