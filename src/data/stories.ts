@@ -88,7 +88,7 @@ export const STORIES: Story[] = [
         heading: "Why Mangaluru matters",
         paragraphs: [
           "Mangaluru is already a critical location in India’s petroleum ecosystem.",
-          "The region is home to Mangalore Refinery and Petrochemicals Ltd. (MRPL), a major refinery operated by an ONGC subsidiary, and also houses one of India’s existing strategic petroleum storage facilities.",
+          "The region is home to **Mangalore Refinery and Petrochemicals Ltd. (MRPL)**, a major refinery operated by an ONGC subsidiary, and also houses one of India’s existing strategic petroleum storage facilities.",
           "This gives the city a unique advantage: refinery infrastructure, crude storage capacity and access to maritime supply routes are already concentrated in the same region.",
           "The proposed ONGC reserve could further strengthen this ecosystem and make Mangaluru even more important in India’s long-term energy planning.",
         ],
@@ -108,8 +108,8 @@ export const STORIES: Story[] = [
       {
         heading: "India’s current oil reserves",
         paragraphs: [
-          "India currently operates strategic crude storage facilities at Mangaluru, Padur and Visakhapatnam.",
-          "Together, these facilities provide around 5.33 million metric tonnes of storage capacity.",
+          "India currently operates strategic crude storage facilities at **Mangaluru, Padur and Visakhapatnam**.",
+          "Together, these facilities provide around **5.33 million metric tonnes of storage capacity**.",
           "According to information previously provided by the government to Parliament, about 4.094 MMT of crude was stored in the facilities, representing roughly 77% of total capacity.",
           "Around half of the available storage capacity was also being used under commercial arrangements.",
           "If ONGC’s proposed 1.75 MMT Mangaluru facility is completed, India’s existing strategic storage capacity would rise substantially.",
@@ -133,7 +133,7 @@ export const STORIES: Story[] = [
           "India has also been strengthening strategic crude storage partnerships with countries such as the UAE and Japan.",
           "Such arrangements allow India to combine domestic storage infrastructure with international energy relationships, potentially improving supply security during periods of global instability.",
           "For Mangaluru, this creates an opportunity to become more than just a refinery location.",
-          "The region could increasingly emerge as one of India’s key centres for crude storage, refining, energy logistics and strategic petroleum infrastructure.",
+          "The region could increasingly emerge as one of India’s key centres for **crude storage, refining, energy logistics and strategic petroleum infrastructure**.",
         ],
       },
       {
@@ -144,7 +144,7 @@ export const STORIES: Story[] = [
           "Developing a strategic petroleum reserve would place ONGC more directly within India’s national energy-security infrastructure.",
           "The proposed Mangaluru project therefore carries significance beyond its 1.75 MMT storage capacity.",
           "It strengthens Mangaluru’s position in India’s petroleum network while supporting a larger national objective: ensuring the country has enough strategic crude reserves to withstand future supply shocks.",
-          "For a coastal city already closely connected to India’s refinery and petroleum economy, the development could further reinforce Mangaluru’s place on India’s energy map.",
+          "For a coastal city already closely connected to India’s refinery and petroleum economy, the development could further reinforce **Mangaluru’s place on India’s energy map**.",
         ],
       },
     ],
@@ -229,10 +229,9 @@ export const STORIES: Story[] = [
         ],
       },
       {
-        heading: "Can Mangaluru convert policy recognition into actual companies, actual offices and actual high-value jobs?",
-        paragraphs: [
-          "That is the opportunity worth watching.",
-        ],
+        heading:
+          "Can Mangaluru convert policy recognition into actual companies, actual offices and actual high-value jobs?",
+        paragraphs: ["That is the opportunity worth watching."],
       },
     ],
   },
