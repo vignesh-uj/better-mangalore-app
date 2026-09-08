@@ -78,7 +78,7 @@ export const STORIES: Story[] = [
     standfirst:
       "ONGC’s proposed 1.75 million metric tonne strategic petroleum reserve would expand Mangaluru’s role as a crude storage and refining hub.",
     intro: [
-      "Mangaluru could soon play an even bigger role in India’s energy-security strategy, with Oil and Natural Gas Corporation Ltd. (ONGC) proposing a new 1.75 million metric tonne strategic petroleum reserve in the city.",
+      "Mangaluru could soon play an even bigger role in India’s energy-security strategy, with Oil and Natural Gas Corporation Ltd. (ONGC) proposing a new **1.75 million metric tonne strategic petroleum reserve** in the city.",
       "The proposed facility would significantly expand the region’s importance as a crude oil storage and refining hub, while strengthening India’s ability to respond to sudden disruptions in global oil supply.",
       "ONGC’s board has given in-principle approval for the project and associated infrastructure under the Phase-I Extension of India’s Strategic Petroleum Reserve programme.",
       "The project is expected to be taken up as infrastructure of national importance under the direction of the Ministry of Petroleum and Natural Gas.",
