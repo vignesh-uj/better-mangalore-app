@@ -93,7 +93,7 @@ function StoryDetail() {
           <div className="mt-8 space-y-5">
             {story.intro.map((p) => (
               <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                {p}
+                {renderRichText(p)}
               </p>
             ))}
           </div>
