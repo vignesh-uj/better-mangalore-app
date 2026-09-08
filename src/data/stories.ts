@@ -246,18 +246,18 @@ export const STORIES: Story[] = [
     standfirst:
       "A 16-week industry-driven acceleration programme from the Karnataka Digital Economy Mission begins in Mangaluru, with ₹10 lakh zero-equity grants on offer.",
     intro: [
-      "Mangaluru has been selected as the starting point for K-Combinator, a new industry-driven startup acceleration programme from the Karnataka Digital Economy Mission (KDEM).",
-      "The initiative was launched in the city under the leadership of TiE Mangaluru, which has been chosen to host and drive the first K-Combinator programme in Karnataka.",
-      "The programme is part of the State government’s Beyond Bengaluru Mission and the Local Economy Accelerator Program (LEAP), both aimed at strengthening startup and innovation ecosystems outside Bengaluru.",
-      "The Mangaluru launch will initially focus on promising startups from Mangaluru, Udupi and the broader coastal Karnataka region, before the model is expanded to other parts of the State.",
+      "Mangaluru has been selected as the starting point for **K-Combinator**, a new industry-driven startup acceleration programme from the **Karnataka Digital Economy Mission (KDEM)**.",
+      "The initiative was launched in the city under the leadership of **TiE Mangaluru**, which has been chosen to host and drive the first K-Combinator programme in Karnataka.",
+      "The programme is part of the State government’s **Beyond Bengaluru Mission** and the **Local Economy Accelerator Program (LEAP)**, both aimed at strengthening startup and innovation ecosystems outside Bengaluru.",
+      "The Mangaluru launch will initially focus on promising startups from **Mangaluru, Udupi and the broader coastal Karnataka region**, before the model is expanded to other parts of the State.",
     ],
     sections: [
       {
         heading: "16-week acceleration programme",
         paragraphs: [
-          "K-Combinator is designed for startups that have already moved beyond the idea stage and have validated a Proof of Concept (PoC) or Minimum Viable Product (MVP).",
-          "Each cohort will select around four to six startups, with three cohorts expected to be conducted every year.",
-          "Selected founders will go through a structured 16-week acceleration programme covering areas such as product-market fit, customer validation, go-to-market strategy, scaling and investor readiness.",
+          "K-Combinator is designed for startups that have already moved beyond the idea stage and have validated a **Proof of Concept (PoC) or Minimum Viable Product (MVP)**.",
+          "Each cohort will select around **four to six startups**, with three cohorts expected to be conducted every year.",
+          "Selected founders will go through a structured **16-week acceleration programme** covering areas such as product-market fit, customer validation, go-to-market strategy, scaling and investor readiness.",
           "The programme is expected to include startup bootcamps and masterclasses, more than 15 mentoring sessions, peer reviews, industry and market connections, investor-readiness support and demo-day opportunities.",
           "According to Rohith Bhat, founder-president of TiE Mangaluru, the launch in Mangaluru marks the beginning of the K-Combinator programme’s wider rollout across Karnataka.",
         ],
@@ -266,15 +266,15 @@ export const STORIES: Story[] = [
         heading: "₹10 lakh grant opportunity",
         paragraphs: [
           "One of the major attractions for participating startups is the possibility of receiving financial support without giving up equity.",
-          "Two qualifying startups from each cohort may become eligible for a ₹10 lakh performance-linked grant at 0% equity, subject to completion of the programme, eligibility conditions and necessary approvals.",
+          "Two qualifying startups from each cohort may become eligible for a **₹10 lakh performance-linked grant at 0% equity**, subject to completion of the programme, eligibility conditions and necessary approvals.",
           "This could be particularly valuable for early-stage founders who need capital to scale but want to avoid dilution at an early stage.",
         ],
       },
       {
         heading: "₹9.26 crore approved for the programme",
         paragraphs: [
-          "K-Combinator has received a total approved grant allocation of around ₹9.26 crore for a five-year period.",
-          "Of this, the first tranche of approximately ₹1.89 crore has already been released to begin programme implementation.",
+          "K-Combinator has received a total approved grant allocation of around **₹9.26 crore for a five-year period**.",
+          "Of this, the first tranche of approximately **₹1.89 crore** has already been released to begin programme implementation.",
           "The initiative is expected to combine government support with private-sector mentorship and industry participation.",
         ],
       },
@@ -283,9 +283,9 @@ export const STORIES: Story[] = [
         paragraphs: [
           "Through TiE Mangaluru, participating startups will also be able to tap into TiE’s wider network of entrepreneurs, investors and mentors.",
           "Suyog Shetty, vice-president of TiE Mangaluru, said the programme is intended to help regional startups gain access to experienced mentors, industry connections and potential markets.",
-          "The broader ambition is to enable founders to build scalable companies from coastal Karnataka while accessing national and global opportunities.",
+          "The broader ambition is to enable founders to **build scalable companies from coastal Karnataka while accessing national and global opportunities**.",
           "Shyamaprasad Hebbar, president of TiE Mangaluru, said the programme is particularly suited to startups that have already tested their product and are now preparing for their next stage of growth.",
-          "Applications for the first K-Combinator cohort are now open.",
+          "Applications for the **first K-Combinator cohort are now open**.",
         ],
       },
       {
