@@ -172,8 +172,21 @@ export const STORIES: Story[] = [
         heading: "First, what exactly is a GCC?",
         paragraphs: [
           "A Global Capability Centre is essentially an overseas office established and operated directly by a multinational company. Unlike a traditional outsourcing arrangement, the employees in a GCC work for the multinational itself.",
-          "A global bank, retailer, healthcare company, manufacturer or insurance company might establish a centre in India to handle functions such as software development, finance and accounting, human resources, procurement and supply chain, data analytics, engineering support, research and development, cloud operations, and AI and automation.",
-          "India has become one of the world’s biggest GCC markets. Industry estimates across 2025 and 2026 place the number of GCCs in India at more than **1,700**, employing close to **1.9 million people** and generating annual revenues of over **$64 billion**. The sector is expected to continue expanding rapidly through the end of this decade.",
+          "A global bank, retailer, healthcare company, manufacturer or insurance company might establish a centre in India to handle functions such as:",
+        ],
+        bullets: [
+          "Software development",
+          "Finance and accounting",
+          "Human resources",
+          "Procurement and supply chain",
+          "Data analytics",
+          "Engineering support",
+          "Research and development",
+          "Cloud operations",
+          "AI and automation",
+        ],
+        afterBullets: [
+          "India has become one of the world's biggest GCC markets. Industry estimates across 2025 and 2026 place the number of GCCs in India at more than **1,700**, employing close to **1.9 million people** and generating annual revenues of over **$64 billion**. The sector is expected to continue expanding rapidly through the end of this decade.",
         ],
       },
       {
