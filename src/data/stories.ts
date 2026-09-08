@@ -36,7 +36,7 @@ export const STORIES: Story[] = [
     standfirst: "",
     intro: [
       "A new anganwadi model in Bengre, Mangaluru, is blending modern child-friendly infrastructure with a simple emotional idea — making children feel as comfortable as they would in their grandmother’s home.",
-      "Named ‘Ajjimane’, meaning grandmother’s house, the centre has been developed by Nirmiti Kendra with around ₹25 lakh in CSR support from Mangalore Refinery and Petrochemicals Ltd. (MRPL).",
+      "Named **‘Ajjimane’**, meaning grandmother’s house, the centre has been developed by **Nirmiti Kendra** with around **₹25 lakh in CSR support from Mangalore Refinery and Petrochemicals Ltd. (MRPL)**.",
       "The idea is to move beyond the conventional anganwadi setup and create a space that feels warm, safe and inviting for young children.",
     ],
     sections: [
@@ -52,7 +52,7 @@ export const STORIES: Story[] = [
       {
         heading: "Sustainability built into the centre",
         paragraphs: [
-          "The anganwadi also incorporates several environmentally conscious features. These include solar lighting, rainwater harvesting and vermicomposting.",
+          "The anganwadi also incorporates several environmentally conscious features. These include **solar lighting, rainwater harvesting and vermicomposting**.",
           "Organic waste is converted into manure and used in the fruit and vegetable garden maintained within the premises.",
           "Produce grown at the centre is then used to complement the children’s meals.",
           "The garden also includes fruit-bearing plants such as rose apple, with harvested fruits being shared with the children.",
@@ -64,7 +64,7 @@ export const STORIES: Story[] = [
           "The Ajjimane model attempts to bring nutrition, sustainability, learning and emotional well-being together within one early-childhood space.",
           "For children, especially in the crucial formative years, the surroundings in which they learn can be just as important as the lessons themselves.",
           "By combining modern infrastructure with a familiar, homely atmosphere, the Bengre initiative offers an interesting model for how anganwadis can evolve.",
-          "For Mangaluru, Ajjimane is a small but thoughtful example of how CSR-led public infrastructure can go beyond construction and focus on the actual experience of the people it is meant to serve.",
+          "For Mangaluru, **Ajjimane is a small but thoughtful example of how CSR-led public infrastructure can go beyond construction and focus on the actual experience of the people it is meant to serve.**",
         ],
       },
     ],
@@ -162,8 +162,8 @@ export const STORIES: Story[] = [
     standfirst:
       "Mangaluru is beginning to appear in a conversation that, until recently, was dominated by Bengaluru, Hyderabad, Pune, Chennai and other large technology hubs.",
     intro: [
-      "Mangaluru is beginning to appear in a conversation that, until recently, was dominated by Bengaluru, Hyderabad, Pune, Chennai and other large technology hubs: Global Capability Centres, or GCCs.",
-      "Two developments make the timing particularly interesting. Union Finance Minister Nirmala Sitharaman recently referred to Mangaluru while speaking about the spread of GCC investments beyond India’s largest metros. At the same time, Karnataka’s GCC Policy 2024–29 has formally identified Mangaluru as one of the cities to be developed under the State’s Beyond Bengaluru strategy.",
+      "Mangaluru is beginning to appear in a conversation that, until recently, was dominated by Bengaluru, Hyderabad, Pune, Chennai and other large technology hubs: **Global Capability Centres, or GCCs**.",
+      "Two developments make the timing particularly interesting. Union Finance Minister Nirmala Sitharaman recently referred to Mangaluru while speaking about the spread of GCC investments beyond India’s largest metros. At the same time, Karnataka’s GCC Policy 2024–29 has formally identified Mangaluru as one of the cities to be developed under the State’s **Beyond Bengaluru** strategy.",
       "That does not mean major multinational companies are about to rush into the city. But it does mean Mangaluru is now part of a policy-backed effort to distribute more high-value global business operations across Karnataka.",
       "This is the first story in a new series looking at industries that could realistically expand in Mangaluru over the coming years.",
     ],
@@ -173,7 +173,7 @@ export const STORIES: Story[] = [
         paragraphs: [
           "A Global Capability Centre is essentially an overseas office established and operated directly by a multinational company. Unlike a traditional outsourcing arrangement, the employees in a GCC work for the multinational itself.",
           "A global bank, retailer, healthcare company, manufacturer or insurance company might establish a centre in India to handle functions such as software development, finance and accounting, human resources, procurement and supply chain, data analytics, engineering support, research and development, cloud operations, and AI and automation.",
-          "India has become one of the world’s biggest GCC markets. Industry estimates across 2025 and 2026 place the number of GCCs in India at more than 1,700, employing close to 1.9 million people and generating annual revenues of over $64 billion. The sector is expected to continue expanding rapidly through the end of this decade.",
+          "India has become one of the world’s biggest GCC markets. Industry estimates across 2025 and 2026 place the number of GCCs in India at more than **1,700**, employing close to **1.9 million people** and generating annual revenues of over **$64 billion**. The sector is expected to continue expanding rapidly through the end of this decade.",
         ],
       },
       {
@@ -188,7 +188,7 @@ export const STORIES: Story[] = [
         heading: "Mangaluru does have a few genuine advantages",
         paragraphs: [
           "The city’s strongest case is probably not that it is simply cheaper than Bengaluru. That argument alone is unlikely to attract serious global companies. Mangaluru needs a more differentiated pitch.",
-          "One advantage is its talent base. The city has previously ranked strongly in national employability studies, and the wider region produces a steady stream of engineering, management, commerce and healthcare graduates. Institutions such as NITK Surathkal, together with several engineering colleges in and around the region, provide a technical talent pipeline.",
+          "One advantage is its talent base. The city has previously ranked strongly in national employability studies, and the wider region produces a steady stream of engineering, management, commerce and healthcare graduates. Institutions such as **NITK Surathkal**, together with several engineering colleges in and around the region, provide a technical talent pipeline.",
           "Mangaluru also already has an IT industry, even if it is relatively small compared with Bengaluru. Companies such as Cognizant and Mphasis have operations in the region, while home-grown technology companies have shown that software businesses can be built and scaled from coastal Karnataka. That existing ecosystem matters. Large companies are more comfortable entering cities where some combination of technical talent, experienced employees, office infrastructure and service providers already exists.",
         ],
       },
@@ -197,7 +197,7 @@ export const STORIES: Story[] = [
         paragraphs: [
           "Mangaluru may also have an opportunity to position itself around sectors where it already has unusually deep local expertise. Healthcare is an obvious example. The city has a large concentration of hospitals, medical colleges and healthcare institutions. That could make Mangaluru relevant for healthcare-related GCC work involving areas such as digital health, medical operations, analytics, finance, claims processing or technology support.",
           "Banking and financial services are another possibility. Mangaluru has a long banking history and remains home to major financial institutions. That legacy could help the city develop talent for BFSI-oriented support operations, especially in finance, compliance, technology and shared services.",
-          "In other words, Mangaluru’s strongest GCC pitch may eventually be: not ‘we are cheaper than Bengaluru’, but ‘we have specialised talent in a few sectors where global companies already need scale.’",
+          "In other words, Mangaluru’s strongest GCC pitch may eventually be: **not ‘we are cheaper than Bengaluru’, but ‘we have specialised talent in a few sectors where global companies already need scale.’**",
         ],
       },
       {
@@ -212,7 +212,7 @@ export const STORIES: Story[] = [
         heading: "One important gap remains",
         paragraphs: [
           "For all the positive signals, Mangaluru still lacks something that cities such as Coimbatore and Thiruvananthapuram can already showcase: a visible cluster of large, well-known GCCs operating at scale. Those cities can point to major multinational capability centres employing thousands of professionals. Mangaluru, at least based on publicly visible information, cannot yet make the same claim.",
-          "That distinction matters. Today, Mangaluru has policy support, talent potential and sector strengths. What it does not yet have is a long list of multinational GCC success stories. That is why the opportunity should be viewed as emerging rather than established.",
+          "That distinction matters. Today, Mangaluru has **policy support, talent potential and sector strengths**. What it does not yet have is a long list of multinational GCC success stories. That is why the opportunity should be viewed as emerging rather than established.",
         ],
       },
       {
