@@ -7,6 +7,7 @@ import storyInfra from "@/assets/story-infra.jpg";
 export type StorySection = {
   heading: string;
   paragraphs: string[];
+  bullets?: string[];
 };
 
 export type Story = {
