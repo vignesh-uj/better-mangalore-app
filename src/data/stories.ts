@@ -8,6 +8,7 @@ export type StorySection = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  afterBullets?: string[];
 };
 
 export type Story = {
@@ -270,9 +271,10 @@ export const STORIES: Story[] = [
           "Investor-readiness support",
           "Demo-day opportunities",
         ],
-      },
+        afterBullets: [
           "According to Rohith Bhat, founder-president of TiE Mangaluru, the launch in Mangaluru marks the beginning of the K-Combinator programme’s wider rollout across Karnataka.",
         ],
+      },
       },
       {
         heading: "₹10 lakh grant opportunity",
