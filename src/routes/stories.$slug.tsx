@@ -115,7 +115,7 @@ function StoryDetail() {
                 <div className="mt-3 space-y-4">
                   {section.paragraphs.map((p) => (
                     <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                      {p}
+                      {renderRichText(p)}
                     </p>
                   ))}
                 </div>
