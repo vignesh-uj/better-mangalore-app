@@ -275,7 +275,6 @@ export const STORIES: Story[] = [
           "According to Rohith Bhat, founder-president of TiE Mangaluru, the launch in Mangaluru marks the beginning of the K-Combinator programme’s wider rollout across Karnataka.",
         ],
       },
-      },
       {
         heading: "₹10 lakh grant opportunity",
         paragraphs: [
