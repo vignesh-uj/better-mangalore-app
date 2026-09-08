@@ -7,6 +7,8 @@ import storyInfra from "@/assets/story-infra.jpg";
 export type StorySection = {
   heading: string;
   paragraphs: string[];
+  bullets?: string[];
+  afterBullets?: string[];
 };
 
 export type Story = {
@@ -258,7 +260,18 @@ export const STORIES: Story[] = [
           "K-Combinator is designed for startups that have already moved beyond the idea stage and have validated a **Proof of Concept (PoC) or Minimum Viable Product (MVP)**.",
           "Each cohort will select around **four to six startups**, with three cohorts expected to be conducted every year.",
           "Selected founders will go through a structured **16-week acceleration programme** covering areas such as product-market fit, customer validation, go-to-market strategy, scaling and investor readiness.",
-          "The programme is expected to include startup bootcamps and masterclasses, more than 15 mentoring sessions, peer reviews, industry and market connections, investor-readiness support and demo-day opportunities.",
+          "The programme is expected to include:",
+          "",
+        ],
+        bullets: [
+          "Startup bootcamps and masterclasses",
+          "More than 15 mentoring sessions",
+          "Peer reviews",
+          "Industry and market connections",
+          "Investor-readiness support",
+          "Demo-day opportunities",
+        ],
+        afterBullets: [
           "According to Rohith Bhat, founder-president of TiE Mangaluru, the launch in Mangaluru marks the beginning of the K-Combinator programme’s wider rollout across Karnataka.",
         ],
       },
