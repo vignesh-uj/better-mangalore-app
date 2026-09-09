@@ -67,7 +67,7 @@ function StoryNotFound() {
 }
 
 function StoryDetail() {
-  const { story, related } = Route.useLoaderData();
+  const { story, related }: { story: Story; related: Story[] } = Route.useLoaderData();
 
   return (
     <PageShell>

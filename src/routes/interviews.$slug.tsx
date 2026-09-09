@@ -61,7 +61,8 @@ function InterviewNotFound() {
 }
 
 function InterviewDetail() {
-  const { interview, related } = Route.useLoaderData();
+  const { interview, related }: { interview: Interview; related: Interview[] } =
+    Route.useLoaderData();
 
   return (
     <PageShell>
