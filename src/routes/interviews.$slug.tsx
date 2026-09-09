@@ -1,10 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
-import { getInterview, getRelatedInterviews } from "@/data/interviews";
+import { getInterview, getRelatedInterviews, type Interview } from "@/data/interviews";
 
 export const Route = createFileRoute("/interviews/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { interview: Interview; related: Interview[] } => {
     const interview = getInterview(params.slug);
     if (!interview) throw notFound();
     return { interview, related: getRelatedInterviews(params.slug) };
@@ -61,7 +61,8 @@ function InterviewNotFound() {
 }
 
 function InterviewDetail() {
-  const { interview, related } = Route.useLoaderData();
+  const { interview, related }: { interview: Interview; related: Interview[] } =
+    Route.useLoaderData();
 
   return (
     <PageShell>

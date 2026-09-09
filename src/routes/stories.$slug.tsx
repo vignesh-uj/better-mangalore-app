@@ -1,10 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
-import { getRelatedStories, getStory } from "@/data/stories";
+import { getRelatedStories, getStory, type Story } from "@/data/stories";
 
 export const Route = createFileRoute("/stories/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { story: Story; related: Story[] } => {
     const story = getStory(params.slug);
     if (!story) throw notFound();
     return { story, related: getRelatedStories(params.slug) };
@@ -67,7 +67,7 @@ function StoryNotFound() {
 }
 
 function StoryDetail() {
-  const { story, related } = Route.useLoaderData();
+  const { story, related }: { story: Story; related: Story[] } = Route.useLoaderData();
 
   return (
     <PageShell>
