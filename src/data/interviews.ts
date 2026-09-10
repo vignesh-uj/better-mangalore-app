@@ -1,5 +1,5 @@
 import heroInterviews from "@/assets/hero-interviews.jpg";
-import person1 from "@/assets/person-1.jpg";
+import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg.asset.json";
 import person2 from "@/assets/person-2.jpg";
 
 export type InterviewExchange = {
@@ -36,8 +36,8 @@ export type Interview = {
 export const INTERVIEWS: Interview[] = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: person1,
-    stageImage: heroInterviews,
+    image: praveenStage.url,
+    stageImage: praveenStage.url,
     stageImageAlt: "Praveen Kalbhavi in conversation on stage in Mangaluru",
     tags: "Business · Entrepreneurship",
     name: "Praveen Kalbhavi",
