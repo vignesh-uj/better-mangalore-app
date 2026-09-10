@@ -147,16 +147,16 @@ function InterviewDetail() {
                     <div key={ex.question ?? exIdx} className="space-y-4">
                       {ex.question && (
                         <div className="space-y-1">
-                          <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                          <p className="font-sans text-base font-semibold normal-case leading-snug text-ink">
                             Interviewer:
                           </p>
-                          <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                          <p className="font-sans text-base font-semibold normal-case leading-snug text-ink">
                             {renderRichText(ex.question)}
                           </p>
                         </div>
                       )}
                       <div className="space-y-1">
-                        <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                        <p className="font-sans text-base font-semibold normal-case leading-snug text-ink">
                           Mr. {interview.name}:
                         </p>
                         {ex.answer.map((p) => (
