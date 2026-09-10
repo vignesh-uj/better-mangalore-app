@@ -32,6 +32,18 @@ export const Route = createFileRoute("/interviews/$slug")({
   notFoundComponent: InterviewNotFound,
 });
 
+function renderRichText(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="font-bold text-ink">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      part
+    ),
+  );
+}
+
 function slugifyHeading(heading: string) {
   return heading
     .toLowerCase()
