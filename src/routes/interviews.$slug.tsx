@@ -145,7 +145,8 @@ function InterviewDetail() {
                     <div key={ex.question ?? exIdx} className="space-y-3">
                       {ex.question && (
                         <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
-                          {ex.question}
+                          <span className="text-ink">Interviewer: </span>
+                          {renderRichText(ex.question)}
                         </p>
                       )}
                       {ex.answer.map((p) => (
