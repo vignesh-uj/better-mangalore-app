@@ -2,9 +2,15 @@ import heroInterviews from "@/assets/hero-interviews.jpg";
 import person1 from "@/assets/person-1.jpg";
 import person2 from "@/assets/person-2.jpg";
 
+export type InterviewExchange = {
+  question?: string;
+  answer: string[];
+};
+
 export type InterviewSection = {
   heading: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  exchanges?: InterviewExchange[];
 };
 
 export type Interview = {
