@@ -142,18 +142,27 @@ function InterviewDetail() {
                 </div>
                 <div className="mt-4 space-y-6">
                   {section.exchanges?.map((ex, exIdx) => (
-                    <div key={ex.question ?? exIdx} className="space-y-3">
+                    <div key={ex.question ?? exIdx} className="space-y-4">
                       {ex.question && (
-                        <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
-                          <span className="text-ink">Interviewer: </span>
-                          {renderRichText(ex.question)}
-                        </p>
+                        <div className="space-y-1">
+                          <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                            Interviewer:
+                          </p>
+                          <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                            {renderRichText(ex.question)}
+                          </p>
+                        </div>
                       )}
-                      {ex.answer.map((p) => (
-                        <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                          {renderRichText(p)}
+                      <div className="space-y-1">
+                        <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                          Mr. {interview.name}:
                         </p>
-                      ))}
+                        {ex.answer.map((p) => (
+                          <p key={p} className="text-base leading-relaxed text-muted-foreground">
+                            {renderRichText(p)}
+                          </p>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
