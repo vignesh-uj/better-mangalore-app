@@ -131,7 +131,9 @@ function InterviewDetail() {
                   <span className="text-sm font-bold text-primary">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
-                  <h2 className="headline-sm text-ink">{section.heading}</h2>
+                  <h2 className="font-sans text-xl font-semibold normal-case leading-snug text-ink">
+                    {section.heading}
+                  </h2>
                 </div>
                 <div className="mt-3 space-y-4">
                   {section.paragraphs?.map((p) => (
