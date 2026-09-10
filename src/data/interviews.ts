@@ -2,9 +2,15 @@ import heroInterviews from "@/assets/hero-interviews.jpg";
 import person1 from "@/assets/person-1.jpg";
 import person2 from "@/assets/person-2.jpg";
 
+export type InterviewExchange = {
+  question?: string;
+  answer: string[];
+};
+
 export type InterviewSection = {
   heading: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  exchanges?: InterviewExchange[];
 };
 
 export type Interview = {
@@ -36,69 +42,221 @@ export const INTERVIEWS: Interview[] = [
     tags: "Business · Entrepreneurship",
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
-    headline: "On leaving Infosys, becoming an entrepreneur and building Novigo Solutions",
+    headline: "On Entrepreneurship, Mangaluru, AI and Building Novigo",
     standfirst:
-      "A candid conversation with Praveen Kalbhavi on transitions, taking risks, learning on the way and what it takes to build a company from Mangaluru.",
+      "At Founder Connect, an initiative of the CII Mangaluru IT & Startup Panel, Praveen Kalbhavi spoke about his move from Infosys to entrepreneurship, building Novigo from Mangaluru, funding and startup survival, hiring, and the impact of AI on careers.",
     date: "Sep 4, 2026",
-    readTime: "12 min read",
-    body: "After spending two decades at Infosys, Praveen Kalbhavi chose a very different path — entrepreneurship. Speaking at Founder Connect at St. Joseph Engineering College, Mangaluru, he reflected on that transition, the realities of building a company and some of the lessons he has learned along the way.",
-    pullQuote:
-      "I realised that the best time to take a risk is when you still have the energy to figure things out.",
+    readTime: "14 min read",
+    body: "Entrepreneurs, aspiring founders and students came together at Founder Connect, held at St. Joseph Engineering College, Mangaluru, for an interaction focused on entrepreneurship, technology, careers and building businesses from the region.",
+    pullQuote: "AI will replace the developer if the developer doesn’t use AI.",
     pullQuoteBody:
-      "Praveen Kalbhavi opens up about the moment he decided to leave a stable career at Infosys, what pushed him towards entrepreneurship, and how Mangaluru continues to influence the way he builds and leads.",
-    sideQuote:
-      "Mangaluru gives you roots. The world gives you opportunities. You need both.",
+      "Praveen Kalbhavi reflects on what it takes to build a company, why Mangaluru can support globally ambitious businesses, and why curiosity and problem-solving may matter more than ever for the next generation.",
+    sideQuote: "Problem solving is more important than syntax.",
     intro: [
-      "After spending two decades at Infosys, Praveen Kalbhavi chose a very different path — entrepreneurship. Speaking at Founder Connect at St. Joseph Engineering College, Mangaluru, he reflected on that transition, the realities of building a company and some of the lessons he has learned along the way.",
-      "In this conversation with Better Mangalore, Praveen shares his journey — from growing up in Mangaluru, to navigating a long career at Infosys, to taking the leap and building Novigo Solutions. It's a story of opportunity, uncertainty, resilience and the belief that Mangaluru can produce global businesses.",
+      "Entrepreneurs, aspiring founders and students came together at **Founder Connect**, held at **St. Joseph Engineering College, Mangaluru**, for an interaction focused on entrepreneurship, technology, careers and building businesses from the region.",
+      "Founder Connect is an initiative of the **CII Mangaluru IT & Startup Panel**, aimed at creating stronger connections between entrepreneurs, industry leaders, startups, students and the wider innovation ecosystem. The platform is designed to enable candid conversations, exchange practical experiences and give emerging founders and young professionals an opportunity to learn directly from those who have built and led businesses.",
+      "At the event, **Praveen Kalbhavi, CEO & Co-founder of Novigo Solutions**, spoke about his transition from Infosys to entrepreneurship, building Novigo from Mangaluru, working with co-founders, funding and startup survival, leadership, hiring, and the impact of AI on careers.",
+      "In this conversation, Kalbhavi reflects on what it takes to build a company, why Mangaluru can support globally ambitious businesses, and why curiosity and problem-solving may matter more than ever for the next generation.",
     ],
     sections: [
       {
-        heading: "Early days and Mangaluru roots",
-        paragraphs: [
-          "Praveen grew up in a city where ambition was quiet but persistent. Schooling in Mangaluru, he says, taught him discipline and a certain comfort with doing things the long way — a habit that later shaped how he approached building an organisation.",
-          "\"The city teaches you patience,\" he says. \"You learn that steady work compounds.\"",
+        heading: "From Infosys to Entrepreneurship",
+        exchanges: [
+          {
+            question: "After two decades at Infosys, what made you step into entrepreneurship?",
+            answer: [
+              "When I left Infosys, my idea wasn’t to start a company. I wanted to spend more time with students and institutions and help young people build good careers.",
+              "Around the same time, three people who are now my co-founders approached me and said they wanted to build something and needed me with them. They were younger than me but already had 10–15 years of industry experience.",
+              "That’s how I got involved. Once I did, my entrepreneurial side came out completely.",
+              "The biggest difference from corporate life was freedom. In a large organisation, you work within boundaries. In your own company, you can try things. You may succeed or fail, but the decision is yours.",
+            ],
+          },
         ],
       },
       {
-        heading: "Life at Infosys",
-        paragraphs: [
-          "Two decades inside one of India's largest technology companies gave him exposure to global clients, large delivery teams and the mechanics of enterprise software at scale.",
-          "It also gave him a clear view of the gaps — the places where smaller, focused teams could move faster and solve problems more closely with customers.",
+        heading: "Finding a Differentiator",
+        exchanges: [
+          {
+            question: "What was the thinking behind Novigo Solutions?",
+            answer: [
+              "Before starting a company, you need clarity about what you want to achieve.",
+              "For me, three things matter: passion and drive, curiosity, and most importantly, the problem statement.",
+              "In IT services, we were entering a market that already had other IT services companies. So the obvious question was: what can we do differently?",
+              "We looked at our strengths—corporate experience, leadership capabilities and market connections—and then looked at what enterprises needed.",
+              "We decided to focus on global enterprises and newer technologies.",
+              "When RPA emerged, we got into it early. We became a UiPath partner and eventually became part of their Partner Advisory Board.",
+              "We implemented automation for Enterprises and banks in the US.",
+              "In services, something new comes every few years—RPA, low-code/no-code, cybersecurity and now AI. Our model has been to identify emerging technologies, build capability around them and take them to enterprise customers.",
+            ],
+          },
         ],
       },
       {
-        heading: "The decision to take the leap",
-        paragraphs: [
-          "Leaving a stable role was not a single dramatic moment but a slow accumulation of conviction. Praveen describes weighing the security of a long career against the possibility of building something of his own.",
-          "The deciding factor, he says, was energy — the willingness to spend a few uncomfortable years learning an entirely new craft.",
+        heading: "Why Co-founders Matter",
+        exchanges: [
+          {
+            question: "What is your advice on choosing co-founders?",
+            answer: [
+              "Wherever I meet startups, I tell them: don’t start alone.",
+              "Entrepreneurship has uncertainty and pain. Having at least one person to share that journey with makes a difference.",
+              "But co-founders will not always agree. You have to manage differences just like you would in a family.",
+              "Among the four of us, responsibilities were divided according to strengths. One person handled technology, another HR, and so on.",
+              "More importantly, the person responsible for a function must have the final say.",
+              "Others can give opinions, but once a decision is taken, you shouldn’t question that person even if the decision later goes wrong.",
+              "That trust is very important in a partnership.",
+            ],
+          },
         ],
       },
       {
-        heading: "Building Novigo Solutions",
-        paragraphs: [
-          "Novigo began with a small team and a narrow focus, choosing depth over breadth. Early customers came through relationships built over years, and the company grew by staying close to the problems it understood best.",
-          "Hiring, he says, was the hardest part — not finding talent, but finding people willing to build alongside uncertainty.",
+        heading: "Growing Without External Funding",
+        exchanges: [
+          {
+            question:
+              "Did you worry about whether the company would survive in the early years?",
+            answer: [
+              "Yes, but because we were a services company, we could grow step by step.",
+              "We put in some of our own money.",
+              "In the early years, revenue grew gradually, and we didn’t take salaries.",
+              "We remained conservative and built the company over more than ten years across RPA, low-code/no-code and other technologies.",
+              "Only in the last two years did we decide it was time to scale aggressively.",
+              "Instead of taking external funding, we chose the acquisition route and joined a global company that could help us take on larger enterprise projects.",
+            ],
+          },
         ],
       },
       {
-        heading: "Challenges and lessons",
-        paragraphs: [
-          "Cash flow, client concentration and the temptation to chase every opportunity were the recurring tests. Praveen credits survival to saying no more often than yes.",
-          "\"Every founder underestimates how long trust takes to build and how quickly it can be lost,\" he says.",
+        heading: "Why Mangaluru?",
+        exchanges: [
+          {
+            question: "Why build a global company from Mangaluru?",
+            answer: [
+              "Even when we started Novigo, people felt that building a company from Mangalore would be difficult and that larger startup hubs offered more access.",
+              "But I had already seen what Mangalore could do.",
+              "I was part of the initial Infosys Mangalore team from 1995. It started with around 20 people and grew to around 4,000 while I was there.",
+              "The Mangalore Development Center performed strongly and earned recognition within Infosys.",
+              "That gave me confidence in the talent here.",
+              "Today, Novigo has development centres in Bangalore, Chennai, Cochin and Pune as well, but fresh hiring happens largely in Mangalore.",
+              "People here are adaptable and productive.",
+              "Whenever we experimented with something new—whether RPA or another technology—we often started it here because you can bring people together, brainstorm and move quickly.",
+              "Over the last seven or eight years, many more companies have come to Mangalore. Companies from larger hubs are also looking at this city because of its talent and productivity.",
+            ],
+          },
         ],
       },
       {
-        heading: "Advice for aspiring entrepreneurs",
-        paragraphs: [
-          "Start with a problem you have lived through. Build a small, honest team. Keep your costs boring and your promises modest.",
-          "And do not wait for a perfect moment — clarity, he says, arrives only after you begin.",
+        heading: "A Leadership Role Model",
+        exchanges: [
+          {
+            question: "Who has influenced you most as a leader?",
+            answer: [
+              "Narayana Murthy is a role model for me. Two things stood out. One was his simplicity and humbleness. The other was his ability to think ahead. Even while I was at Infosys, many decisions around growth and major milestones reflected that vision.",
+            ],
+          },
         ],
       },
       {
-        heading: "What's next",
-        paragraphs: [
-          "Novigo continues to expand its product work while Praveen spends more time mentoring founders in the region, convinced that Mangaluru's next decade will be defined by companies built at home rather than talent exported elsewhere.",
+        heading: "Should Students Start Up Immediately?",
+        exchanges: [
+          {
+            question:
+              "Should students start a company immediately after college or first gain industry experience?",
+            answer: [
+              "It depends on the idea. If you have identified a real problem, know how to solve it and have clarity, don’t wait. Two years may be too late because somebody else may take the idea forward. But if you only know that you want to become an entrepreneur and don’t yet have a clear problem to solve, spend some time in that industry. Understand the domain and get to the root of the problem.",
+              "Today, incubation centres can provide infrastructure, mentoring, technical support and networking.",
+              "Also, don’t compare yourself with somebody on a salary path.",
+              "You may choose a salary path, or you may choose a few years without salary and perhaps build something valuable later.",
+              "But success is never guaranteed.",
+              "Validate your idea with people who genuinely understand the industry.",
+              "Before spending a large amount of money, build a POC and validate the idea. For early-stage funding, seed or angel funding can often be better than simply taking a loan because somebody else believing enough to invest in your idea itself provides validation.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "“AI Will Replace the Developer Who Doesn’t Use AI”",
+        exchanges: [
+          {
+            question: "Will AI take away jobs?",
+            answer: [
+              "AI will make jobs easier and faster. Many repetitive and monotonous tasks will go away, but people will use AI to make that happen.",
+              "**AI will replace the developer if the developer doesn’t use AI.**",
+              "If you use AI effectively, you can become far more productive. When I was a developer, a program could take me 15–20 days or even a month. Today, somebody using AI may do the same kind of work in minutes. The developer, analyst, architect and project manager will still exist. But everybody will have to use AI. At the same time, companies may be able to do more work with smaller teams because the same work can be completed much faster. That doesn’t necessarily mean the industry is disappearing. Productivity is changing the mathematics of hiring. So I would tell students to also think about becoming job creators.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "What Novigo Looks for While Hiring",
+        exchanges: [
+          {
+            question: "What do you look for in young engineers beyond marks?",
+            answer: [
+              "Honestly, in Novigo’s hiring process, marks are not the main thing I look at. For us at Novigo, the 60% criterion is more of a basic eligibility filter. I would rather see your GitHub page. How many projects have you worked on? How many hackathons have you participated in? How many technology events have you attended? What problems have you solved?",
+              "Those things tell me much more.",
+              "With AI, memorising programming syntax is becoming less important.",
+              "We need people who can understand a requirement, think clearly and give AI the right problem statement.",
+              "**Problem solving is more important than syntax.**",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Why Startups Fail",
+        exchanges: [
+          {
+            question: "Do startups fail because of the market or because of the founder?",
+            answer: [
+              "I don’t think it is only the market.",
+              "The market is always there.",
+              "Take Ola and Uber. Even with strong players in the market, companies such as Rapido and others have still found opportunities.",
+              "The important thing is whether the founder understands what the customer wants.",
+              "The same applies to e-commerce. Amazon and Flipkart dominate, but specialised players can still succeed.",
+              "For example, if I want to buy a guitar, a specialised musical-instrument platform may be more useful to me than Amazon because it understands that category deeply.",
+              "You can still succeed in a crowded market if you know exactly which problem you are solving.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Rapid Fire",
+        exchanges: [
+          {
+            question: "One daily habit every student should develop?",
+            answer: [
+              "Curiosity. Whether you are in corporate life or entrepreneurship, curiosity helps you build your career.",
+            ],
+          },
+          {
+            question: "One essential skill for every engineer?",
+            answer: [
+              "Problem solving. Languages and technologies will keep changing, but problem solving remains.",
+            ],
+          },
+          {
+            question: "Entrepreneurship in one word?",
+            answer: [
+              "Passion—and drive. Not every entrepreneur succeeds, but a true entrepreneur keeps moving.",
+            ],
+          },
+          {
+            question: "Mangalore in one word?",
+            answer: ["Unique culture. It has a good blend of urban and rural."],
+          },
+        ],
+      },
+      {
+        heading: "A Final Message to Students",
+        exchanges: [
+          {
+            answer: [
+              "If you have entrepreneurship in your mind, you should have questions.",
+              "Come out of the hesitation and shyness.",
+              "It may be a silly question, or it may be such a difficult question that even I don’t know the answer.",
+              "That is perfectly fine.",
+              "But you should still ask.",
+            ],
+          },
         ],
       },
     ],
