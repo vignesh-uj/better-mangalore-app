@@ -97,11 +97,12 @@ const CONVERSATIONS = [
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
   },
   {
-    slug: "rohan-shetty-coastal-ventures",
+    slug: "zeeshan-talentzy",
     image: person2,
-    name: "Rohan Shetty",
-    role: "Managing Director, Coastal Ventures",
-    blurb: "On leadership, innovation and opportunities in the years ahead.",
+    name: "Zeeshan",
+    role: "Founder, Talentzy",
+    blurb:
+      "On entrepreneurship, AI, leadership, financial freedom and building life on your own terms.",
   },
 ];
 
