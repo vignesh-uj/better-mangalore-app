@@ -107,7 +107,7 @@ function InterviewDetail() {
           <div className="mt-8 space-y-5">
             {interview.intro.map((p) => (
               <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                {p}
+                {renderRichText(p)}
               </p>
             ))}
           </div>
@@ -122,10 +122,26 @@ function InterviewDetail() {
                   <h2 className="headline-sm text-ink">{section.heading}</h2>
                 </div>
                 <div className="mt-3 space-y-4">
-                  {section.paragraphs.map((p) => (
+                  {section.paragraphs?.map((p) => (
                     <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                      {p}
+                      {renderRichText(p)}
                     </p>
+                  ))}
+                </div>
+                <div className="mt-4 space-y-6">
+                  {section.exchanges?.map((ex, exIdx) => (
+                    <div key={ex.question ?? exIdx} className="space-y-3">
+                      {ex.question && (
+                        <p className="font-sans text-base font-extrabold normal-case leading-snug text-ink">
+                          {ex.question}
+                        </p>
+                      )}
+                      {ex.answer.map((p) => (
+                        <p key={p} className="text-base leading-relaxed text-muted-foreground">
+                          {renderRichText(p)}
+                        </p>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </section>
