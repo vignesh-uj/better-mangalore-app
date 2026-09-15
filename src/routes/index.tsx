@@ -98,7 +98,7 @@ const CONVERSATIONS = [
   },
   {
     slug: "zeeshan-talentzy",
-    image: person2,
+    image: zeeshanPortrait.url,
     name: "Zeeshan",
     role: "Founder, Talentzy",
     blurb:
