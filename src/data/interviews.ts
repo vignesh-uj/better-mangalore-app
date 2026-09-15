@@ -1,5 +1,6 @@
 import heroInterviews from "@/assets/hero-interviews.jpg";
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg.asset.json";
+import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg.asset.json";
 import person2 from "@/assets/person-2.jpg";
 
 export type InterviewExchange = {
