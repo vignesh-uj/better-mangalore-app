@@ -128,7 +128,7 @@ function InterviewDetail() {
             {interview.sections.map((section, idx) => (
               <section key={section.heading} id={slugifyHeading(section.heading)}>
                 <div className="flex items-baseline gap-3">
-                  <span className="text-sm font-bold text-primary">
+                  <span className="text-xl font-bold leading-snug text-primary">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
                   <h2 className="font-sans text-xl font-semibold normal-case leading-snug text-ink">
