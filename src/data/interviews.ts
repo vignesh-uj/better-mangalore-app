@@ -1,7 +1,7 @@
 import heroInterviews from "@/assets/hero-interviews.jpg";
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg.asset.json";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg.asset.json";
-import person2 from "@/assets/person-2.jpg";
+import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg.asset.json";
 
 export type InterviewExchange = {
   question?: string;
@@ -259,7 +259,7 @@ export const INTERVIEWS: Interview[] = [
   },
   {
     slug: "zeeshan-talentzy",
-    image: person2,
+    image: zeeshanPortrait.url,
     stageImage: heroInterviews,
     stageImageAlt: "Zeeshan in conversation in Mangaluru",
     tags: "Business · Entrepreneurship",
