@@ -51,7 +51,8 @@ export const INTERVIEWS: Interview[] = [
     pullQuote: "AI will replace the developer if the developer doesn’t use AI.",
     pullQuoteBody:
       "Praveen Kalbhavi reflects on what it takes to build a company, why Mangaluru can support globally ambitious businesses, and why curiosity and problem-solving may matter more than ever for the next generation.",
-    sideQuote: "Problem solving is more important than syntax.",
+    sideQuote:
+      "When I started Novigo, a lot of people here were thinking that in Mangalore, you can't run a company and you have to move to Bangalore. But my experience with Infosys Mangalore gave me an understanding of the difference between the so-called talent pool here versus Tier 1 cities.Our Mangalore Development Center used to get the Best Development Center Award year after year compared to Bangalore, Trivandrum, Chennai and Hyderabad.It's simply because of the people—it's a culture of the place.",
     intro: [
       "Entrepreneurs, aspiring founders and students came together at **Founder Connect**, held at **St. Joseph Engineering College, Mangaluru**, for an interaction focused on entrepreneurship, technology, careers and building businesses from the region.",
       "Founder Connect is an initiative of the **CII Mangaluru IT & Startup Panel**, aimed at creating stronger connections between entrepreneurs, industry leaders, startups, students and the wider innovation ecosystem. The platform is designed to enable candid conversations, exchange practical experiences and give emerging founders and young professionals an opportunity to learn directly from those who have built and led businesses.",
@@ -112,8 +113,7 @@ export const INTERVIEWS: Interview[] = [
         heading: "Growing Without External Funding",
         exchanges: [
           {
-            question:
-              "Did you worry about whether the company would survive in the early years?",
+            question: "Did you worry about whether the company would survive in the early years?",
             answer: [
               "Yes, but because we were a services company, we could grow step by step.",
               "We put in some of our own money.",
@@ -159,8 +159,7 @@ export const INTERVIEWS: Interview[] = [
         heading: "Should Students Start Up Immediately?",
         exchanges: [
           {
-            question:
-              "Should students start a company immediately after college or first gain industry experience?",
+            question: "Should students start a company immediately after college or first gain industry experience?",
             answer: [
               "It depends on the idea. If you have identified a real problem, know how to solve it and have clarity, don’t wait. Two years may be too late because somebody else may take the idea forward. But if you only know that you want to become an entrepreneur and don’t yet have a clear problem to solve, spend some time in that industry. Understand the domain and get to the root of the problem.",
               "Today, incubation centres can provide infrastructure, mentoring, technical support and networking.",
@@ -229,15 +228,11 @@ export const INTERVIEWS: Interview[] = [
           },
           {
             question: "One essential skill for every engineer?",
-            answer: [
-              "Problem solving. Languages and technologies will keep changing, but problem solving remains.",
-            ],
+            answer: ["Problem solving. Languages and technologies will keep changing, but problem solving remains."],
           },
           {
             question: "Entrepreneurship in one word?",
-            answer: [
-              "Passion—and drive. Not every entrepreneur succeeds, but a true entrepreneur keeps moving.",
-            ],
+            answer: ["Passion—and drive. Not every entrepreneur succeeds, but a true entrepreneur keeps moving."],
           },
           {
             question: "Mangalore in one word?",
@@ -270,8 +265,7 @@ export const INTERVIEWS: Interview[] = [
     name: "Zeeshan",
     role: "Founder, Talentzy",
     headline: "From Corporate Leadership to Entrepreneurial Freedom",
-    standfirst:
-      "On Entrepreneurship, AI, Leadership, Financial Freedom and Building Life on Your Own Terms.",
+    standfirst: "On Entrepreneurship, AI, Leadership, Financial Freedom and Building Life on Your Own Terms.",
     date: "Sep 10, 2026",
     readTime: "12 min read",
     body: "Zeeshan on why financial stability matters before taking risks, how customer understanding beats fashionable ideas, why humility remains central to leadership, and how AI is reshaping the skills every professional must build.",
@@ -357,8 +351,7 @@ export const INTERVIEWS: Interview[] = [
         ],
       },
       {
-        heading:
-          "What is the most important leadership quality you have learned from senior leaders?",
+        heading: "What is the most important leadership quality you have learned from senior leaders?",
         paragraphs: [
           "Humility.",
           "It is actually easier to be humble than arrogant.",
@@ -397,15 +390,13 @@ export const INTERVIEWS: Interview[] = [
         ],
       },
       {
-        heading:
-          "Should a student start a company immediately after college or get a job first?",
+        heading: "Should a student start a company immediately after college or get a job first?",
         paragraphs: [
           "There is nothing wrong with getting a job first. Get your foundation right. A job allows you to understand customers, processes, organisations and people. When I started at Infosys, I wasn't doing glamorous leadership work. I handled basic HR and administrative activities. Eventually, I moved into senior HR leadership. Because I experienced the organisation from the ground up, I could later understand what the junior-most person was going through. That experience becomes incredibly useful when you're a founder. So earn. Learn. Understand the market. Build some financial stability. And if you still strongly believe in your idea, start.",
         ],
       },
       {
-        heading:
-          "Do people from Mangaluru need to move to Bengaluru or another big city to become successful?",
+        heading: "Do people from Mangaluru need to move to Bengaluru or another big city to become successful?",
         paragraphs: [
           "It depends on what you mean by successful.",
           "I spent many years in Bengaluru before eventually returning to Mangaluru. There are undoubtedly opportunities available in larger cities. But there's another question we don't ask often enough:",
