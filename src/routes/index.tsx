@@ -91,7 +91,7 @@ const LATEST = [
 const CONVERSATIONS = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: person1,
+    image: praveenPortrait.url,
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
