@@ -40,11 +40,23 @@ export const Route = createFileRoute("/about")({
 });
 
 const DRIVERS = [
-  { Icon: Search, title: "Fact-based", body: "We report with accuracy, verify before we publish and keep facts first." },
+  {
+    Icon: Search,
+    title: "Fact-based",
+    body: "We report with accuracy, verify before we publish and keep facts first.",
+  },
   { Icon: Users, title: "Constructive", body: "We focus on solutions, possibilities and progress not just problems." },
   { Icon: Target, title: "City-first", body: "Everything we do is centered around making Mangaluru better." },
-  { Icon: MessageSquare, title: "Inclusive", body: "We represent diverse voices from across communities, professions and ideas." },
-  { Icon: Heart, title: "Proudly local", body: "We are rooted in Mangaluru and passionate about its people and potential." },
+  {
+    Icon: MessageSquare,
+    title: "Inclusive",
+    body: "We represent diverse voices from across communities, professions and ideas.",
+  },
+  {
+    Icon: Heart,
+    title: "Proudly local",
+    body: "We are rooted in Mangaluru and passionate about its people and potential.",
+  },
 ];
 
 const COVER = [
@@ -85,12 +97,11 @@ function About() {
               <span className="mt-4 block h-1 w-12 bg-primary" />
               <p className="mt-5 text-sm leading-relaxed text-muted-foreground md:text-base">
                 Better Mangalore is an independent digital publication featuring stories about the{" "}
-                <strong className="text-ink">people</strong>, ideas, businesses and developments
-                shaping Mangaluru and coastal Karnataka.
+                <strong className="text-ink">people</strong>, ideas, businesses and developments shaping Mangaluru and
+                coastal Karnataka.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-                We highlight issues, celebrate progress and start conversations that help our city
-                move forward.
+                We highlight issues, celebrate progress and start conversations that help our city move forward.
               </p>
             </div>
 
@@ -139,10 +150,7 @@ function About() {
           </div>
           <div className="mt-8 grid grid-cols-2 gap-px bg-border sm:grid-cols-3 lg:grid-cols-5">
             {COVER.map(({ Icon, label }) => (
-              <div
-                key={label}
-                className="flex flex-col items-center gap-3 bg-background px-3 py-6 text-center"
-              >
+              <div key={label} className="flex flex-col items-center gap-3 bg-background px-3 py-6 text-center">
                 <Icon className="size-7 text-primary" strokeWidth={1.5} />
                 <span className="text-xs font-bold uppercase tracking-wide text-ink">{label}</span>
               </div>
@@ -159,14 +167,13 @@ function About() {
             <span className="h-px w-12 bg-primary" />
           </div>
           <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
-            We love hearing from our readers. Have a story idea, feedback or suggestion? We'd love to
-            hear from you.
+            We love hearing from our readers. Have a story idea, feedback or suggestion? We'd love to hear from you.
           </p>
           <ul className="mt-6 space-y-4 text-sm">
             <li className="flex items-center gap-3">
               <Mail className="size-5 text-ink" />
-              <a href="mailto:hello@bettermangalore.com" className="hover:text-primary">
-                hello@bettermangalore.com
+              <a href="mailto:vigneshumangalore@gmail.com" className="hover:text-primary">
+                vigneshumangalore@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-3">
