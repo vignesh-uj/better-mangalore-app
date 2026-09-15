@@ -1,7 +1,7 @@
 import heroInterviews from "@/assets/hero-interviews.jpg";
-import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg.asset.json";
-import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg.asset.json";
-import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg.asset.json";
+import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
+import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 
 export type InterviewExchange = {
   question?: string;
@@ -37,8 +37,8 @@ export type Interview = {
 export const INTERVIEWS: Interview[] = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: praveenPortrait.url,
-    stageImage: praveenStage.url,
+    image: praveenPortrait,
+    stageImage: praveenStage,
     stageImageAlt: "Praveen Kalbhavi in conversation on stage in Mangaluru",
     tags: "Business · Entrepreneurship",
     name: "Praveen Kalbhavi",
@@ -259,7 +259,7 @@ export const INTERVIEWS: Interview[] = [
   },
   {
     slug: "zeeshan-talentzy",
-    image: zeeshanPortrait.url,
+    image: zeeshanPortrait,
     stageImage: heroInterviews,
     stageImageAlt: "Zeeshan in conversation in Mangaluru",
     tags: "Business · Entrepreneurship",

@@ -10,8 +10,8 @@ import storyInfra from "@/assets/story-infra.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyAirport from "@/assets/story-airport.jpg";
 import storySme from "@/assets/story-sme.jpg";
-import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg.asset.json";
-import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg.asset.json";
+import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,14 +91,14 @@ const LATEST = [
 const CONVERSATIONS = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: praveenPortrait.url,
+    image: praveenPortrait,
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
   },
   {
     slug: "zeeshan-talentzy",
-    image: zeeshanPortrait.url,
+    image: zeeshanPortrait,
     name: "Zeeshan",
     role: "Founder, Talentzy",
     blurb:
