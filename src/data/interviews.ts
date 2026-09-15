@@ -259,7 +259,7 @@ export const INTERVIEWS: Interview[] = [
   },
   {
     slug: "zeeshan-talentzy",
-    image: person2,
+    image: zeeshanPortrait.url,
     stageImage: heroInterviews,
     stageImageAlt: "Zeeshan in conversation in Mangaluru",
     tags: "Business · Entrepreneurship",
