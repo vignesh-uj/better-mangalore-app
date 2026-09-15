@@ -107,15 +107,6 @@ function InterviewDetail() {
             className="mt-8 aspect-[16/10] w-full object-cover"
           />
 
-          <blockquote className="mt-8 border-l-4 border-primary pl-5">
-            <p className="font-sans text-xl font-extrabold normal-case leading-snug text-ink">
-              &ldquo;{interview.pullQuote}&rdquo;
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {interview.pullQuoteBody}
-            </p>
-          </blockquote>
-
           <div className="mt-8 space-y-5">
             {interview.intro.map((p) => (
               <p key={p} className="text-base leading-relaxed text-muted-foreground">
