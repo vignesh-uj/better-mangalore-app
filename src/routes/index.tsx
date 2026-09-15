@@ -91,14 +91,14 @@ const LATEST = [
 const CONVERSATIONS = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: praveenPortrait.url,
+    image: praveenPortrait,
     name: "Praveen Kalbhavi",
     role: "CEO & Co-founder, Novigo Solutions",
     blurb: "On leaving Infosys, entrepreneurship and building a company from Mangaluru.",
   },
   {
     slug: "zeeshan-talentzy",
-    image: zeeshanPortrait.url,
+    image: zeeshanPortrait,
     name: "Zeeshan",
     role: "Founder, Talentzy",
     blurb:
