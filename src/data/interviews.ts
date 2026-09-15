@@ -37,7 +37,7 @@ export type Interview = {
 export const INTERVIEWS: Interview[] = [
   {
     slug: "praveen-kalbhavi-novigo-solutions",
-    image: praveenStage.url,
+    image: praveenPortrait.url,
     stageImage: praveenStage.url,
     stageImageAlt: "Praveen Kalbhavi in conversation on stage in Mangaluru",
     tags: "Business · Entrepreneurship",
