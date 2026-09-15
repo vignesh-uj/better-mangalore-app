@@ -1,7 +1,7 @@
 import heroInterviews from "@/assets/hero-interviews.jpg";
-import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg.asset.json";
-import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg.asset.json";
-import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg.asset.json";
+import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
+import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 
 export type InterviewExchange = {
   question?: string;
