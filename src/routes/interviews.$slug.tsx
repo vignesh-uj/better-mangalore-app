@@ -173,7 +173,7 @@ function InterviewDetail() {
           </div>
         </div>
 
-        <aside className="space-y-10 lg:sticky lg:top-28 lg:self-start">
+        <aside className="space-y-10">
           <div className="bg-surface p-6">
             <Quote className="size-7 fill-primary text-primary" />
             <p className="mt-3 font-sans text-lg font-extrabold normal-case italic leading-snug text-ink">
