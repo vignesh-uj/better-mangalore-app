@@ -2,6 +2,7 @@ import heroInterviews from "@/assets/hero-interviews.jpg";
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
+import zeeshanStage from "@/assets/zeeshan-stage.jpg";
 
 export type InterviewExchange = {
   question?: string;
@@ -260,8 +261,8 @@ export const INTERVIEWS: Interview[] = [
   {
     slug: "zeeshan-talentzy",
     image: zeeshanPortrait,
-    stageImage: heroInterviews,
-    stageImageAlt: "Zeeshan in conversation in Mangaluru",
+    stageImage: zeeshanStage,
+    stageImageAlt: "Zeeshan in conversation on stage at CII Founder Connect, Sahyadri College of Engineering, Mangaluru",
     tags: "Business · Entrepreneurship",
     name: "Zeeshan",
     role: "Founder, Talentzy",
