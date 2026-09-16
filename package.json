@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && cp dist/index.html dist/404.html && mkdir -p dist/interviews/zeeshan-talentzy && cp dist/index.html dist/interviews/zeeshan-talentzy/index.html",
+    "build": "vite build && cp dist/index.html dist/404.html && node scripts/generate-interview-pages.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
