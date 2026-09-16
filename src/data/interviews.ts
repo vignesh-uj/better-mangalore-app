@@ -1,4 +1,4 @@
-import heroInterviews from "@/assets/hero-interviews.jpg";
+
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
