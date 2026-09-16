@@ -1,4 +1,3 @@
-
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
@@ -20,6 +19,7 @@ export type Interview = {
   image: string;
   stageImage: string;
   stageImageAlt: string;
+  socialImage: string;
   tags: string;
   name: string;
   role: string;
@@ -40,6 +40,7 @@ export const INTERVIEWS: Interview[] = [
     slug: "praveen-kalbhavi-novigo-solutions",
     image: praveenPortrait,
     stageImage: praveenStage,
+    socialImage: "/interviews/praveen-kalbhavi.jpg",
     stageImageAlt: "Praveen Kalbhavi in conversation on stage in Mangaluru",
     tags: "Business · Entrepreneurship",
     name: "Praveen Kalbhavi",
@@ -262,7 +263,9 @@ export const INTERVIEWS: Interview[] = [
     slug: "zeeshan-talentzy",
     image: zeeshanPortrait,
     stageImage: zeeshanStage,
-    stageImageAlt: "Zeeshan in conversation on stage at CII Founder Connect, Sahyadri College of Engineering, Mangaluru",
+    socialImage: "/interviews/zeeshan.jpg",
+    stageImageAlt:
+      "Zeeshan in conversation on stage at CII Founder Connect, Sahyadri College of Engineering, Mangaluru",
     tags: "Business · Entrepreneurship",
     name: "Zeeshan",
     role: "Founder, Talentzy",
