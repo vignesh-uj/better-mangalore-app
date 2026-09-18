@@ -65,6 +65,14 @@ function heroPortSlide() {
 
 const LATEST = [
   {
+    slug: "karnataka-cabinet-meeting-mangaluru",
+    image: storyCabinet,
+    tags: "City • Policy",
+    title:
+      "A landmark Cabinet meeting for Coastal Karnataka: Tulu recognition, Puttur medical college and a new development push",
+  },
+  {
+
     slug: "mangaluru-india-energy-security",
     image: storyPort,
     tags: "Business",
