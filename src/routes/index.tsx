@@ -12,6 +12,8 @@ import storyAirport from "@/assets/story-airport.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
+import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({

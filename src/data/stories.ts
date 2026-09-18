@@ -3,6 +3,8 @@ import storyPort from "@/assets/story-port.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyInfra from "@/assets/story-infra.jpg";
+import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+
 
 export type StorySection = {
   heading: string;
