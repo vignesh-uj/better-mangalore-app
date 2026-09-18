@@ -12,6 +12,8 @@ import storyAirport from "@/assets/story-airport.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
+import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -63,6 +65,14 @@ function heroPortSlide() {
 
 const LATEST = [
   {
+    slug: "karnataka-cabinet-meeting-mangaluru",
+    image: storyCabinet,
+    tags: "City • Policy",
+    title:
+      "A landmark Cabinet meeting for Coastal Karnataka: Tulu recognition, Puttur medical college and a new development push",
+  },
+  {
+
     slug: "mangaluru-india-energy-security",
     image: storyPort,
     tags: "Business",

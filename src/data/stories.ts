@@ -3,6 +3,8 @@ import storyPort from "@/assets/story-port.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyInfra from "@/assets/story-infra.jpg";
+import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+
 
 export type StorySection = {
   heading: string;
@@ -26,6 +28,103 @@ export type Story = {
 
 export const STORIES: Story[] = [
   {
+    slug: "karnataka-cabinet-meeting-mangaluru",
+    image: storyCabinet,
+    imageAlt: "Karnataka Cabinet meeting in progress at Praja Soudha in Mangaluru",
+    tags: "City • Policy",
+    title:
+      "A landmark Cabinet meeting for Coastal Karnataka: Tulu recognition, Puttur medical college and a new development push",
+    lead: null,
+    body: "Karnataka's first Cabinet meeting in Mangaluru delivered decisions on Tulu's official recognition, a medical college in Puttur, Hebri's industrial future, Kambala support and coastal protection.",
+    standfirst:
+      "From official recognition for Tulu to a government medical college in Puttur, industrial development in Udupi and greater support for Kambala, Karnataka’s first Cabinet meeting in Mangaluru delivered a series of decisions with potentially long-term implications for the coast.",
+    intro: [
+      "The Karnataka Cabinet’s first-ever meeting in Mangaluru on September 18, 2026, was more than a symbolic shift of the seat of government from Bengaluru to the coast.",
+      "Meeting at Praja Soudha in Mangaluru, the Cabinet took up several long-standing demands from Dakshina Kannada and Udupi and announced decisions spanning language, healthcare, industry, culture and coastal protection.",
+      "Among them, one decision stands out for its cultural significance: **formal recognition for Tulu as an additional official language.**",
+    ],
+    sections: [
+      {
+        heading: "Tulu receives long-awaited official recognition",
+        paragraphs: [
+          "For generations of Tulu speakers, the Cabinet decision marks an important milestone.",
+          "The government has approved **Tulu as Karnataka’s second additional language for administrative purposes in Dakshina Kannada and Udupi districts**. The district administrations will be responsible for implementing the decision, with the government reportedly providing around **₹82 lakh annually** for translation, training and related activities.",
+          "This distinction is important. The decision is not merely another expression of support for Tulu or an announcement that the demand will be studied. It is a **Cabinet-approved decision**.",
+          "Tulu organisations, writers, cultural groups and public representatives have campaigned for greater official recognition for years. The language is deeply connected with the identity and cultural traditions of the region stretching across present-day Dakshina Kannada and Udupi and into parts of Kasaragod.",
+          "The decision, however, is separate from another long-standing demand: **including Tulu in the Eighth Schedule of the Constitution of India**. That would require action at the Union level and remains a separate issue.",
+        ],
+      },
+      {
+        heading: "Could Dakshina Kannada become “Mangaluru district”?",
+        paragraphs: [
+          "Another potentially significant change concerns the name of Dakshina Kannada district.",
+          "The government is moving ahead with the process of considering **“Mangaluru” as the district’s new name**.",
+          "Reports following the Cabinet meeting indicate that the government will invite public objections and suggestions, with a notice period of about a month, before proceeding further. Chief Minister D.K. Shivakumar also said public opinion would be collected before a final decision.",
+          "Therefore, it would be premature to say that Dakshina Kannada has already been renamed Mangaluru district.",
+          "What the Cabinet meeting has done is **move the proposal into a formal process**. The final administrative and legal implementation will become clearer after consultation and subsequent government action.",
+        ],
+      },
+      {
+        heading: "Puttur gets a major healthcare commitment",
+        paragraphs: [
+          "One of the biggest concrete infrastructure decisions from the meeting is the establishment of a **government medical college in Puttur taluk**.",
+          "The Cabinet has approved a medical college along with a teaching hospital, hostel and associated infrastructure at an estimated cost of **₹549.79 crore**. A site near Sediyapu in Bannur village has reportedly been identified for the project.",
+          "For Puttur and the surrounding region, the importance goes beyond adding another educational institution.",
+          "A government medical college can expand access to tertiary healthcare while creating medical education capacity, healthcare employment and supporting economic activity around Puttur. The eventual impact, however, will depend on execution — particularly timelines, hospital capacity, staffing and the range of specialties developed.",
+        ],
+      },
+      {
+        heading: "Hebri positioned for industrial and data-centre development",
+        paragraphs: [
+          "The Cabinet meeting also included an industrial push for Udupi district.",
+          "Land in **Hebri** is proposed to be allocated for an industrial area that includes **data-centre-related development**.",
+          "This is worth watching closely.",
+          "Data centres require substantial supporting infrastructure, including reliable power, fibre connectivity, water and appropriate industrial land. The announcement therefore represents an early step rather than evidence that large data centres are already committed to Hebri.",
+          "If the necessary infrastructure and private investment follow, however, the initiative could broaden the region’s industrial profile beyond its traditional economic strengths.",
+        ],
+      },
+      {
+        heading: "Kambala receives ₹1 crore support",
+        paragraphs: [
+          "The Cabinet has also increased government assistance for **Kambala to ₹1 crore**.",
+          "Kambala is one of coastal Karnataka’s most recognisable traditional sporting and cultural institutions. Increased government support could help with the organisation and promotion of the sport, although the eventual impact will depend on how the funding is structured and distributed.",
+          "The announcement is significant because it places a distinctly coastal cultural tradition alongside the larger infrastructure and economic decisions emerging from the meeting.",
+        ],
+      },
+      {
+        heading: "Coastal erosion gets attention",
+        paragraphs: [
+          "Another major concern raised at the Cabinet meeting was **sea erosion along Karnataka’s coastline**.",
+          "The government has decided to seek greater measures and support from the Union government to address coastal erosion.",
+          "For Dakshina Kannada and Udupi, this is not simply an environmental issue. Coastal erosion can affect homes, fishing communities, roads, tourism assets and other infrastructure located close to the shoreline.",
+          "The significance of this announcement will ultimately depend on what projects, funding arrangements and long-term coastal-management measures emerge from discussions between the State and Union governments.",
+        ],
+      },
+      {
+        heading: "Grants for religious and educational institutions",
+        paragraphs: [
+          "The government also announced grants through the Revenue Department for a number of **temples, mosques and educational institutions** in the region.",
+          "Further details on individual institutions, allocations and implementation are expected to provide a clearer picture of the scale of this support.",
+        ],
+      },
+      {
+        heading: "A Cabinet meeting that put the coast at the centre",
+        paragraphs: [
+          "There was considerable symbolism in holding Karnataka’s Cabinet meeting in Mangaluru for the first time.",
+          "But the decisions announced on September 18 went beyond symbolism.",
+          "**Tulu has secured additional official-language recognition. Puttur has received approval for a government medical college. The proposal to rename Dakshina Kannada has entered a formal process. Hebri has been identified for industrial and data-centre-related development. Kambala has received enhanced government support, while coastal erosion has been placed on the agenda for further State–Union action.**",
+          "Together, these decisions touch several dimensions of the region — **identity, healthcare, industry, culture and the coastline itself.**",
+          "The next question is execution.",
+          "Some decisions, particularly Tulu’s recognition and the Puttur medical college, have emerged with relatively concrete administrative or financial details. Others, including the Mangaluru district proposal, data-centre development and coastal-protection measures, still have processes to go through before their full impact becomes clear.",
+          "For coastal Karnataka, September 18, 2026 could therefore be remembered as an important policy moment.",
+          "Whether it becomes a genuine turning point will depend on what happens after the Cabinet leaves Mangaluru.",
+          "**Better Mangalore will continue tracking these announcements as they move from Cabinet decisions to government orders, budgets, projects and implementation on the ground.**",
+        ],
+      },
+    ],
+  },
+  {
+
     slug: "anganwadi-ajjimane-bengre",
     image: heroAnganwadi,
     imageAlt: "Children playing inside a redesigned Anganwadi in Bengre, Mangaluru",
