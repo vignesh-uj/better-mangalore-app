@@ -111,7 +111,9 @@ function StoryDetail() {
           <div className="mt-10 space-y-10">
             {story.sections.map((section) => (
               <section key={section.heading}>
-                <h2 className="headline-sm text-ink">{section.heading}</h2>
+                <h2 className="font-sans text-xl font-bold normal-case leading-snug tracking-tight text-ink md:text-2xl">
+                  {section.heading}
+                </h2>
                 <div className="mt-3 space-y-4">
                   {section.paragraphs.map((p) => (
                     <p key={p} className="text-base leading-relaxed text-muted-foreground">
@@ -139,7 +141,9 @@ function StoryDetail() {
         <aside className="space-y-10 lg:sticky lg:top-28 lg:self-start">
           {related.length > 0 && (
             <div>
-              <h2 className="headline-sm text-ink">Related stories</h2>
+              <h2 className="font-sans text-lg font-bold normal-case tracking-tight text-ink">
+                Related stories
+              </h2>
               <div className="mt-4 space-y-5">
                 {related.map((r) => (
                   <Link
