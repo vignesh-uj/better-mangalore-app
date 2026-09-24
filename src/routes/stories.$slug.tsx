@@ -123,7 +123,7 @@ function StoryDetail() {
                   {section.bullets && section.bullets.length > 0 && (
                     <ul className="list-disc pl-5 text-base leading-relaxed text-muted-foreground">
                       {section.bullets.map((b) => (
-                        <li key={b}>{b}</li>
+                        <li key={b}>{renderRichText(b)}</li>
                       ))}
                     </ul>
                   )}

@@ -4,6 +4,9 @@ import storySme from "@/assets/story-sme.jpg";
 import storyStartup from "@/assets/story-startup.jpg";
 import storyInfra from "@/assets/story-infra.jpg";
 import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+import storyKcombCohort from "@/assets/story-kcombinator-cohort.jpg";
+
+
 
 
 export type StorySection = {
@@ -27,6 +30,46 @@ export type Story = {
 };
 
 export const STORIES: Story[] = [
+  {
+    slug: "tie-k-combinator-eight-startups",
+    image: storyKcombCohort,
+    imageAlt: "A speaker addressing founders at a TiE Mangaluru K-Combinator event",
+    tags: "Startups",
+    title: "Eight startups selected for TiE Mangaluru's K Combinator program",
+    lead: null,
+    body: "Close to 70 startups applied for TiE Mangaluru's K Combinator program. Eight companies — from defence tech to healthcare AI — were selected for the 12-week mentorship cohort.",
+    standfirst:
+      "Close to 70 startups applied for the latest cohort, from which eight companies were selected. They will now undergo a 12-week mentorship program covering business models, go-to-market strategy, fundraising and scaling.",
+    intro: [
+      "TiE Mangaluru has selected **eight startups** for its **K Combinator program**, an initiative built on top of its existing Nurture program to support startups in the region through structured mentorship and growth support.",
+      "According to the TiE Mangaluru team, close to **70 startups applied** for the latest cohort, from which eight companies were selected. The startups will now undergo a **12-week mentorship program** covering areas such as business models, go-to-market strategy, fundraising and scaling. Selected companies may also become eligible for grants and further funding opportunities through the program.",
+    ],
+    sections: [
+      {
+        heading: "The selected startups",
+        paragraphs: [
+          "The eight selected companies span defence technology, healthcare, AI, energy and creative technology — a snapshot of the kind of ventures emerging from the region.",
+        ],
+        bullets: [
+          "**Organic Mind** — A waste-to-energy company converting waste plastics into alternative industrial fuels.",
+          "**Vikasana System** — A Mangaluru-based deep defence technology startup working to connect different defence sensors and autonomous systems into a unified environment.",
+          "**Maltzers Private Limited** — A health-tech and biotech company developing an AI-based solution aimed at reducing friction and delays in oncology-related medical approvals between hospitals and insurers.",
+          "**Foxwell AI** — An AI product company building tools intended to help organisations adopt AI more efficiently.",
+          "**Avishkar AI** — An AI company focused on critical infrastructure such as ATMs, telecom towers and EV charging stations, using AI to coordinate issue detection, engineer response, spare-part identification and ticketing workflows.",
+          "**Loom Tech Innovations** — Developer of Nova Loom, an AI-based energy optimisation platform designed to provide load-level energy insights without requiring individual sensors for every load.",
+          "**Falor Labs** — An AI-powered agentic sound-engineering platform aimed at automating time-consuming audio production work such as ambience, Foley and sound effects.",
+          "**Indra AI** — A healthcare AI startup building a conversational layer and supporting workflows around patient-provider interactions in India.",
+        ],
+      },
+      {
+        heading: "What comes next",
+        paragraphs: [
+          "The K Combinator initiative is part of TiE Mangaluru's broader effort to strengthen the local startup ecosystem by providing mentorship, business guidance and access to potential funding pathways.",
+          "For the eight selected teams, the next 12 weeks will focus on refining their businesses and preparing them for the next stage of growth.",
+        ],
+      },
+    ],
+  },
   {
     slug: "karnataka-cabinet-meeting-mangaluru",
     image: storyCabinet,
