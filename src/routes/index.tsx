@@ -13,6 +13,7 @@ import storySme from "@/assets/story-sme.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
+import storyKcombCohort from "@/assets/story-kcombinator-cohort.jpg";
 
 
 export const Route = createFileRoute("/")({
@@ -64,6 +65,12 @@ function heroPortSlide() {
 }
 
 const LATEST = [
+  {
+    slug: "tie-k-combinator-eight-startups",
+    image: storyKcombCohort,
+    tags: "Startups",
+    title: "Eight startups selected for TiE Mangaluru's K Combinator program",
+  },
   {
     slug: "karnataka-cabinet-meeting-mangaluru",
     image: storyCabinet,
