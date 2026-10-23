@@ -93,11 +93,13 @@ function InterviewDetail() {
         <div>
           <p className="eyebrow">{interview.tags}</p>
           <h1 className="mt-3 font-sans text-3xl font-extrabold normal-case leading-tight tracking-tight text-ink md:text-[2.6rem]">
-            {interview.headline}
+            {interview.fullTitle ?? interview.headline}
           </h1>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            {interview.standfirst}
-          </p>
+          {interview.standfirst && interview.standfirst !== (interview.fullTitle ?? interview.headline) ? (
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+              {interview.standfirst}
+            </p>
+          ) : null}
 
           <img
             src={interview.stageImage}
