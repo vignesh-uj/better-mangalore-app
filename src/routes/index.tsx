@@ -11,6 +11,7 @@ import storyStartup from "@/assets/story-startup.jpg";
 import storyAirport from "@/assets/story-airport.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
 import storyKcombCohort from "@/assets/story-kcombinator-cohort.jpg";
