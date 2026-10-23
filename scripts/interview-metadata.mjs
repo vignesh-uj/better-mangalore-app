@@ -2,6 +2,13 @@
 
 export const interviewMetadata = [
   {
+    slug: "sunil-kumar-chowgule-sbd",
+    headline: "On Chowgule's Shipbuilding Journey",
+    description:
+      "A conversation with Sunil Kumar, General Manager at Chowgule SBD, on Chowgule's shipbuilding journey.",
+    socialImage: "/interviews/sunil-kumar.jpg",
+  },
+  {
     slug: "praveen-kalbhavi-novigo-solutions",
     headline: "On Entrepreneurship, Mangaluru, AI and Building Novigo",
     description:

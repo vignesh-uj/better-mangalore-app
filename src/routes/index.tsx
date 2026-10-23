@@ -11,6 +11,7 @@ import storyStartup from "@/assets/story-startup.jpg";
 import storyAirport from "@/assets/story-airport.jpg";
 import storySme from "@/assets/story-sme.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import storyCabinet from "@/assets/story-cabinet-meeting.jpg";
 import storyKcombCohort from "@/assets/story-kcombinator-cohort.jpg";
@@ -106,6 +107,13 @@ const LATEST = [
 ];
 
 const CONVERSATIONS = [
+  {
+    slug: "sunil-kumar-chowgule-sbd",
+    image: sunilPortrait,
+    name: "Sunil Kumar",
+    role: "General Manager at Chowgule SBD",
+    blurb: "On Chowgule's shipbuilding journey.",
+  },
   {
     slug: "praveen-kalbhavi-novigo-solutions",
     image: praveenPortrait,
@@ -264,6 +272,15 @@ function Home() {
                 </Link>
               </article>
             ))}
+            <Link
+              to="/interviews"
+              className="flex min-h-48 flex-col justify-between border-2 border-border bg-surface p-5 transition-colors hover:border-primary"
+            >
+              <span className="headline-sm text-ink">More conversations</span>
+              <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-primary">
+                View all <ArrowRight className="size-3.5" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

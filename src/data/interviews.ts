@@ -1,5 +1,6 @@
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import zeeshanStage from "@/assets/zeeshan-stage.jpg";
 
@@ -30,12 +31,41 @@ export type Interview = {
   body: string;
   pullQuote: string;
   pullQuoteBody: string;
-  sideQuote: string;
+  sideQuote?: string;
   intro: string[];
   sections: InterviewSection[];
 };
 
 export const INTERVIEWS: Interview[] = [
+  {
+    slug: "sunil-kumar-chowgule-sbd",
+    image: sunilPortrait,
+    stageImage: sunilPortrait,
+    socialImage: "/interviews/sunil-kumar.jpg",
+    stageImageAlt: "Sunil Kumar speaking at an event in Mangaluru",
+    tags: "Business · Shipbuilding",
+    name: "Sunil Kumar",
+    role: "General Manager at Chowgule SBD",
+    headline: "On Chowgule’s Shipbuilding Journey",
+    standfirst:
+      "A conversation with Sunil Kumar, General Manager at Chowgule SBD, on Chowgule’s shipbuilding journey. The full conversation will be published here.",
+    date: "Oct 23, 2026",
+    readTime: "Coming soon",
+    body: "Better Mangalore speaks with Sunil Kumar, General Manager at Chowgule SBD, about Chowgule’s shipbuilding journey. The full conversation will be published here.",
+    pullQuote: "",
+    pullQuoteBody: "",
+    intro: [
+      "The full conversation with **Sunil Kumar, General Manager at Chowgule SBD**, will be published here.",
+    ],
+    sections: [
+      {
+        heading: "The conversation",
+        paragraphs: [
+          "The complete conversation is being finalised and will be published here shortly.",
+        ],
+      },
+    ],
+  },
   {
     slug: "praveen-kalbhavi-novigo-solutions",
     image: praveenPortrait,

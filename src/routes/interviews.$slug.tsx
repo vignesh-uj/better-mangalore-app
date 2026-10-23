@@ -165,16 +165,18 @@ function InterviewDetail() {
         </div>
 
         <aside className="space-y-10">
-          <div className="bg-surface p-6">
-            <Quote className="size-7 fill-primary text-primary" />
-            <p className="mt-3 font-sans text-lg font-extrabold normal-case italic leading-snug text-ink">
-              &ldquo;{interview.sideQuote}&rdquo;
-            </p>
-            <p className="mt-4 flex items-center gap-3 text-sm font-bold text-ink">
-              <span className="h-0.5 w-6 bg-primary" />
-              {interview.name}
-            </p>
-          </div>
+          {interview.sideQuote && (
+            <div className="bg-surface p-6">
+              <Quote className="size-7 fill-primary text-primary" />
+              <p className="mt-3 font-sans text-lg font-extrabold normal-case italic leading-snug text-ink">
+                &ldquo;{interview.sideQuote}&rdquo;
+              </p>
+              <p className="mt-4 flex items-center gap-3 text-sm font-bold text-ink">
+                <span className="h-0.5 w-6 bg-primary" />
+                {interview.name}
+              </p>
+            </div>
+          )}
 
           <div>
             <h2 className="headline-sm text-ink">In this story</h2>
