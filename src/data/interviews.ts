@@ -1,5 +1,6 @@
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
+import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import zeeshanStage from "@/assets/zeeshan-stage.jpg";
 
@@ -30,7 +31,7 @@ export type Interview = {
   body: string;
   pullQuote: string;
   pullQuoteBody: string;
-  sideQuote: string;
+  sideQuote?: string;
   intro: string[];
   sections: InterviewSection[];
 };

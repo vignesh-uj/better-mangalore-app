@@ -107,6 +107,12 @@ const LATEST = [
 
 const CONVERSATIONS = [
   {
+    slug: "sunil-kumar-chowgule-sbd",
+    image: sunilPortrait,
+    name: "Sunil Kumar",
+    role: "General Manager at Chowgule SBD",
+    blurb: "On Chowgule's shipbuilding journey.",
+  },
     slug: "praveen-kalbhavi-novigo-solutions",
     image: praveenPortrait,
     name: "Praveen Kalbhavi",
