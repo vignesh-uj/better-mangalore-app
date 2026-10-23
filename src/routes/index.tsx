@@ -114,6 +114,7 @@ const CONVERSATIONS = [
     role: "General Manager at Chowgule SBD",
     blurb: "On Chowgule's shipbuilding journey.",
   },
+  {
     slug: "praveen-kalbhavi-novigo-solutions",
     image: praveenPortrait,
     name: "Praveen Kalbhavi",
