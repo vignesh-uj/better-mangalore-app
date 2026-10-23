@@ -257,18 +257,6 @@ export const INTERVIEWS: Interview[] = [
           },
         ],
       },
-      {
-        heading: "Four seconds — backed by years of work",
-        paragraphs: [
-          "Perhaps the most striking image from the conversation is also the simplest: a vessel sliding into the water in roughly four seconds.",
-          "To an observer, it is a brief spectacle.",
-          "To the engineers, workers and planners behind it, those seconds represent calculations, fabrication, coordination, risk management and months of collective effort.",
-          "And for Mangaluru, the launch could represent something larger — the gradual emergence of a shipbuilding ecosystem built around port infrastructure, skilled employment, local suppliers, advanced engineering and export-oriented manufacturing.",
-          "As the shipyard moves from its first phase towards further expansion, the question is no longer simply whether ships can be built and launched from Mangaluru.",
-          "They already are.",
-          "The larger question is how much of the economic and industrial ecosystem surrounding those ships can also be built here.",
-        ],
-      },
     ],
   },
   {
