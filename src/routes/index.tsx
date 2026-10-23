@@ -272,6 +272,15 @@ function Home() {
                 </Link>
               </article>
             ))}
+            <Link
+              to="/interviews"
+              className="flex aspect-[4/5] flex-col justify-between border-2 border-border bg-surface p-5 transition-colors hover:border-primary"
+            >
+              <span className="headline-sm text-ink">More conversations</span>
+              <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-primary">
+                View all <ArrowRight className="size-3.5" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>
