@@ -26,6 +26,7 @@ export type Interview = {
   name: string;
   role: string;
   headline: string;
+  fullTitle?: string;
   standfirst: string;
   date: string;
   readTime: string;
@@ -49,6 +50,8 @@ export const INTERVIEWS: Interview[] = [
     name: "Sunil Kumar",
     role: "General Manager at Chowgule SBD",
     headline: "On Chowgule’s Shipbuilding Journey",
+    fullTitle:
+      "“Mangalore Gave Us the Space, Support and Infrastructure to Grow”: Sunil Kumar on Chowgule’s Shipbuilding Journey",
     standfirst:
       "“Mangalore Gave Us the Space, Support and Infrastructure to Grow”: Sunil Kumar on Chowgule’s Shipbuilding Journey",
     date: "Oct 23, 2026",
