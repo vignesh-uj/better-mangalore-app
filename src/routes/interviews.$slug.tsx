@@ -148,13 +148,25 @@ function InterviewDetail() {
                       )}
                       <div className="space-y-1">
                         <p className="font-sans text-base font-semibold normal-case leading-snug text-ink">
-                          Mr. {interview.name}:
+                          {interview.speakerLabel ?? `Mr. ${interview.name}`}:
                         </p>
-                        {ex.answer.map((p) => (
-                          <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                            {renderRichText(p)}
-                          </p>
-                        ))}
+                        {ex.answer.map((p, pIdx) =>
+                          Array.isArray(p) ? (
+                            <ul key={pIdx} className="list-disc space-y-1 pl-6 text-base leading-relaxed text-muted-foreground">
+                              {p.map((li) => (
+                                <li key={li}>{renderRichText(li)}</li>
+                              ))}
+                            </ul>
+                          ) : p.startsWith("### ") ? (
+                            <h3 key={pIdx} className="pt-3 font-sans text-lg font-semibold normal-case leading-snug text-ink">
+                              {renderRichText(p.slice(4))}
+                            </h3>
+                          ) : (
+                            <p key={pIdx} className="text-base leading-relaxed text-muted-foreground">
+                              {renderRichText(p)}
+                            </p>
+                          ),
+                        )}
                       </div>
                     </div>
                   ))}

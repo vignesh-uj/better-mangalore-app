@@ -1,12 +1,13 @@
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
+import sunilStage from "@/assets/sunil-kumar-stage.jpg";
 import zeeshanPortrait from "@/assets/zeeshan-portrait.jpg";
 import zeeshanStage from "@/assets/zeeshan-stage.jpg";
 
 export type InterviewExchange = {
   question?: string;
-  answer: string[];
+  answer: (string | string[])[];
 };
 
 export type InterviewSection = {
@@ -32,6 +33,7 @@ export type Interview = {
   pullQuote: string;
   pullQuoteBody: string;
   sideQuote?: string;
+  speakerLabel?: string;
   intro: string[];
   sections: InterviewSection[];
 };
@@ -40,28 +42,228 @@ export const INTERVIEWS: Interview[] = [
   {
     slug: "sunil-kumar-chowgule-sbd",
     image: sunilPortrait,
-    stageImage: sunilPortrait,
+    stageImage: sunilStage,
     socialImage: "/interviews/sunil-kumar.jpg",
-    stageImageAlt: "Sunil Kumar speaking at an event in Mangaluru",
+    stageImageAlt: "Vessel launch at Chowgule's shipyard in Mangaluru",
     tags: "Business · Shipbuilding",
     name: "Sunil Kumar",
     role: "General Manager at Chowgule SBD",
     headline: "On Chowgule’s Shipbuilding Journey",
     standfirst:
-      "A conversation with Sunil Kumar, General Manager at Chowgule SBD, on Chowgule’s shipbuilding journey. The full conversation will be published here.",
+      "“Mangalore Gave Us the Space, Support and Infrastructure to Grow”: Sunil Kumar on Chowgule’s Shipbuilding Journey",
     date: "Oct 23, 2026",
-    readTime: "Coming soon",
-    body: "Better Mangalore speaks with Sunil Kumar, General Manager at Chowgule SBD, about Chowgule’s shipbuilding journey. The full conversation will be published here.",
+    readTime: "12 min read",
+    body: "Launching a ship can take only a few seconds. But behind those few seconds can be years of experience, engineering calculations, precision, planning and the work of hundreds of people.",
     pullQuote: "",
     pullQuoteBody: "",
+    speakerLabel: "Sunil",
     intro: [
-      "The full conversation with **Sunil Kumar, General Manager at Chowgule SBD**, will be published here.",
+      "Launching a ship can take only a few seconds.",
+      "But behind those few seconds can be years of experience, engineering calculations, precision, planning and the work of hundreds of people.",
+      "Speaking about Chowgule’s shipbuilding operations in Mangaluru, Sunil Kumar, General Manager at Chowgule SBD, Mangalore described the recent launch and delivery of its vessels as more than simply another engineering milestone. He spoke about the science behind the launch, the evolution of the company’s shipbuilding capabilities from Goa to Mangaluru, India’s dependence on imported marine equipment, opportunities for local manufacturers, artificial intelligence in shipbuilding and Mangaluru’s growing place in the maritime industry.",
+      "Here are the excerpts from the conversation.",
     ],
     sections: [
       {
-        heading: "The conversation",
+        heading: "\"Those four seconds represent tremendous effort\"",
+        exchanges: [
+          {
+            question: "**Could you tell us about the vessel launch and what makes it significant?**",
+            answer: [
+              "There is fascinating science behind launching the vessel.",
+              "This particular kind of launching is called a **drop launch**, and it is very rare in India. Dropping a structure from this kind of height requires precision work, calculations, meticulous planning and a lot of effort.",
+              "There is also a lot of emotion involved. You could see some eyes getting wet during the launch because, for us, this is not simply a job. Everybody has put in hard and solid work together.",
+              "Drop launches are common in Europe, but they have an advantage there because the height from the jetty is generally not much. Here, the drop is **more than one metre**.",
+              "Everything therefore has to be precise. There is no room for error. One mistake can cost us something we cannot even think about.",
+              "The actual launch that everybody sees is around **four seconds**.",
+              "I normally compare it with watching an Olympic athlete running to glory in nine-plus seconds in the prestigious 100-meter event. Everybody sees those nine seconds, but behind those seconds are years of practice and hard work.",
+              "It is the same with this launch.",
+              "What everybody sees is a four-second video. But the effort of our team behind those four seconds is tremendous.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "\"Mangalore is our more modern and larger facility\"",
+        exchanges: [
+          {
+            question: "**How does the Mangaluru shipyard compare with your operations in Goa?**",
+            answer: [
+              "Our administration building and operations here are part of the Mangalore facility.",
+              "When we compare it with our Goa facilities, **Mangalore is the more modern and larger facility**.",
+              "In Goa, we have few limitations. There are bridges that vessels need to cross, for example. Here, we do not have those kinds of problems.",
+              "We also have the tremendous support of the port infrastructure — both the old port and New Mangalore Port.",
+              "We have modern facilities, whether it is the covered shed, crane or the other infrastructure required for shipbuilding.",
+              "What you are seeing currently can essentially be considered **Phase 1**.",
+              "This was what was required to get the shipyard operational and begin constructing vessels.",
+              "Going forward, we are planning to expand the location and facilities further under **Phase 2**.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Two export vessels under construction",
+        exchanges: [
+          {
+            question: "**What kind of vessels are currently being built at Mangaluru?**",
+            answer: [
+              "The first vessel that we saw being launched is one of the vessels from the 8,500 DWT series. Another series is around **10,700 DWT**.",
+              "Both series are being built for the European market. The first is connected with customers in the Netherlands and Germany, while another is for the Netherlands.",
+              "We work with reputed international as well as domestic clients.",
+              "Our clientele also includes organisations such as the **Indian Navy, Indian Coast Guard, Mazagon Dock Shipbuilders Limited and Goa Shipyard Limited**, apart from internationally reputed shipbuilders and owners.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "\"Exporting 50 vessels from an Indian shipyard is a statement\"",
+        exchanges: [
+          {
+            question: "**What does crossing the milestone of 50 export vessels mean for the company?**",
+            answer: [
+              "Anywhere in the world, delivering 50 export vessels is a milestone.",
+              "But for an Indian shipyard to build and export 50 vessels is also a statement.",
+              "It demonstrates what we can do.",
+              "We can proudly say that this has been possible because of the efforts of everybody involved and the support we have received from our management.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Learning shipbuilding from Japan",
+        exchanges: [
+          {
+            question: "**How did Chowgule develop its shipbuilding processes over the years?**",
+            answer: [
+              "When we started in Goa, we were trying to understand and adopt some of the principles of shipbuilding followed in Japan., which has been a pioneer in shipbuilding.",
+              "I often compare shipbuilding with the automobile industry. Automobile manufacturing follows line production. Shipbuilding cannot be completely automated in the same way because it is still a labour-intensive industry, but there are lessons that can be adopted.",
+              "We studied the process of an established Shipyard in Japan and implemented some of those approaches in our Goa unit.",
+              "For example, in fabrication, we looked at how activities could be carried out sequentially.",
+              "Once we started doing that, we began gaining technical advantages while improving quality and productivity over time.",
+              "**The Goa unit taught us how to build ships effectively and within the required timeframe.**",
+              "**And Mangalore gave us the space, support and infrastructure required to take that further.**",
+              "That combination has helped us reach where we are today.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Can Indian manufacturers supply more equipment to shipyards?",
+        exchanges: [
+          {
+            question: "A large proportion of marine OEM equipment used in Indian shipbuilding continues to be imported — propulsion, manoeuvring systems, navigation systems, deck equipment and so on. At what stage do you expect Indian OEMs to play a larger role?",
+            answer: [
+              "As far as we are concerned, we are largely an export-oriented business.",
+              "The ships that we construct and deliver contain components sourced from manufacturers across the globe.",
+              "Having more Indian manufacturers participating in this ecosystem is certainly desirable, and we have already started moving in that direction.",
+              "But marine equipment manufacturers also require **global presence and support**.",
+              "For example, if a vessel built here is operating around Rotterdam or elsewhere in Europe and there is a breakdown, support must be readily available there.",
+              "So I would look at localisation happening in roughly **three stages**.",
+              "### Stage 1: Structural and basic materials",
+              "This is where localisation has already started.",
+              "Items such as:",
+              ["steel plates,", "pipes,", "accommodation-related materials,", "Insulation materials, and", "structural items"],
+              "already have a local presence.",
+              "We have started using these products, and there is also a cost advantage.",
+              "The quality has been evaluated and accepted by owners and foreign clients.",
+              "Everything that becomes part of a ship also needs to meet stringent standards and certification requirements. Classification societies inspect and certify equipment and materials.",
+              "So there are several requirements that a manufacturer must fulfil before its product can become part of a vessel.",
+              "### Stage 2: Auxiliary equipment",
+              "The second stage would involve auxiliary equipment that is not necessarily the vessel's main propulsion system.",
+              "This could include equipment such as",
+              ["HVAC", "Pumps", "STP,", "Winches", "Diesel Generators"],
+              "**I think that over the next five years or so**, we should see more leading Indian manufacturers entering these areas.",
+              "### Stage 3: Main propulsion",
+              "The third stage would involve the core propulsion system:",
+              ["main engines,", "gearboxes,", "shafting, and", "propellers."],
+              "These are fundamental parts of a ship.",
+              "Perhaps **seven to eight years down the line**, India should be in a much better position in this area as well.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "An opportunity for Mangaluru's MSMEs",
+        exchanges: [
+          {
+            question: "Mangaluru has industrial areas such as **Baikampady** nearby, with many **MSMEs** that could potentially work with shipyards. **Do you see opportunities for local industries?**",
+            answer: [
+              "There is certainly an opportunity as localisation increases.",
+              "Shipbuilding requires an extensive network of manufacturers and suppliers.",
+              "As Indian manufacturers progressively enter structural products, auxiliary systems and eventually more sophisticated marine equipment, there is potential for companies around this region as well.",
+              "However, the products need to meet the quality, certification and service requirements expected by shipowners and classification societies.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "How important is the Shipbuilding Financial Assistance Scheme?",
+        exchanges: [
+          {
+            question: "The **Shipbuilding Financial Assistance Scheme** offers financial **assistance** for ship construction and has helped make Indian yards more **competitive**. **But shipbuilding requires significant upfront capital. How important is the scheme to a shipbuilder?**",
+            answer: [
+              "The Shipbuilding Financial Assistance Scheme is a completely different subject in itself and could probably be discussed separately.",
+              "When we bid for a ship or invite a customer to build with us, many of our customers are repeat customers.",
+              "If somebody builds one vessel with us, we are confident that they will come back. That is the level of quality we try to maintain.",
+              "In Europe, where many short-sea vessels operate, quality and the reputation of the yard are extremely important considerations.",
+              "Financial assistance can certainly make a difference in terms of pricing and execution.",
+              "However, the assistance comes at a later stage.",
+              "When construction begins, the shipyard still needs to make the necessary investment and have the required resources in place.",
+              "So, yes, the scheme is helpful to have an edge and provide huge support to yard , but **we have to start the construction mush earlier than we receive SBFA.**",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Can AI transform a labour-intensive industry like shipbuilding?",
+        exchanges: [
+          {
+            question: "**Shipbuilding has traditionally been a conservative and labour-intensive industry where mistakes in design or fabrication can cost millions. Is artificial intelligence genuinely becoming a game-changer? Where are you using it?**",
+            answer: [
+              "The world is moving towards Industry 4.0, although how completely shipbuilding can move in that direction remains a question.",
+              "Shipbuilding is labour-intensive, and many activities are still manual. Because of that, automation and AI have limitations.",
+              "Nevertheless, we are trying to adopt them wherever possible.",
+              "One important area is the use of a **digital twin**.",
+              "We can have the entire ship represented digitally before actually building it.",
+              "A ship is an extremely complex structure.",
+              "Within a single compartment or section, you could have:",
+              ["structural elements,", "electrical cables,", "piping,", "different machinery,", "HVAC ducts, and", "several other systems"],
+              "all packed into a limited space.",
+              "It can be very difficult to foresee how all these different elements will integrate physically.",
+              "With advanced software and technologies such as digital twins, we can identify and understand many of these issues **before we actually build the vessel**.",
+              "That gives us a significant advantage.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "What could shipbuilding mean for Mangaluru?",
+        exchanges: [
+          {
+            question: "**Chowgule's success has helped put shipbuilding back in focus in Mangaluru. Where does Mangaluru stand in India's shipbuilding journey, and what could it take for the city to become a major global shipbuilding hub over the next 15 years?**",
+            answer: [
+              "When we started operating, hardly anybody was doing this kind of shipbuilding in Mangalore.",
+              "Today, we have announced our arrival by launching our first vessel from here.",
+              "With the present operations, on a day-to-day basis, **around 1,000 people are directly employed**, with many more people indirectly connected through vendors in and around Mangalore.",
+              "That is one of the ways in which we are contributing to the coastal region.",
+              "With our growth, I am sure this contribution will increase.",
+              "Another advantage is that we are part of a broader maritime ecosystem along this coastline.",
+              "If new technologies or capabilities emerge, we should be willing to share knowledge and learn from each other so that **the overall shipbuilding industry grows**.",
+              "The objective should not simply be for one organisation to excel individually. It should be collaborating and helping the entire shipbuilding ecosystem of our country excel.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Four seconds — backed by years of work",
         paragraphs: [
-          "The complete conversation is being finalised and will be published here shortly.",
+          "Perhaps the most striking image from the conversation is also the simplest: a vessel sliding into the water in roughly four seconds.",
+          "To an observer, it is a brief spectacle.",
+          "To the engineers, workers and planners behind it, those seconds represent calculations, fabrication, coordination, risk management and months of collective effort.",
+          "And for Mangaluru, the launch could represent something larger — the gradual emergence of a shipbuilding ecosystem built around port infrastructure, skilled employment, local suppliers, advanced engineering and export-oriented manufacturing.",
+          "As the shipyard moves from its first phase towards further expansion, the question is no longer simply whether ships can be built and launched from Mangaluru.",
+          "They already are.",
+          "The larger question is how much of the economic and industrial ecosystem surrounding those ships can also be built here.",
         ],
       },
     ],
