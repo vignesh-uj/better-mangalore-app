@@ -1,2 +1,2 @@
-- [ ] Import Hemin's complete document with its title, formatting, and banner photo.
-- [ ] Verify the completed conversation and existing conversation pages.
+- [x] Import Hemin's complete document with its title, formatting, and banner photo.
+- [x] Verify the completed conversation and existing conversation pages.
