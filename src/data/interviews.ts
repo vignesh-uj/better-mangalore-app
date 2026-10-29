@@ -1,3 +1,4 @@
+import heminPortrait from "@/assets/hemin-bharucha-portrait.jpg";
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
@@ -40,6 +41,28 @@ export type Interview = {
 };
 
 export const INTERVIEWS: Interview[] = [
+  {
+    slug: "hemin-bharucha-london-partners",
+    image: heminPortrait,
+    stageImage: heminPortrait,
+    socialImage: "/interviews/hemin-bharucha.jpg",
+    stageImageAlt: "Mr. Hemin Bharucha, Regional Director India and Asia Pacific at London & Partners",
+    tags: "Business · Global Markets",
+    name: "Mr. Hemin Bharucha",
+    role: "Regional Director India and Asia Pacific at London & Partners",
+    headline: "Unlocking Global Opportunities for Coastal Karnataka's Tech Companies",
+    standfirst:
+      "A conversation with Mr. Hemin Bharucha, Regional Director India and Asia Pacific at London & Partners, on unlocking global opportunities for Coastal Karnataka's tech companies.",
+    date: "Oct 29, 2026",
+    readTime: "10 min read",
+    body: "Mr. Hemin Bharucha, Regional Director India and Asia Pacific at London & Partners, on unlocking global opportunities for Coastal Karnataka's tech companies.",
+    pullQuote: "",
+    pullQuoteBody: "",
+    intro: [
+      "Mr. Hemin Bharucha, Regional Director India and Asia Pacific at London & Partners, speaks about unlocking global opportunities for Coastal Karnataka's tech companies.",
+    ],
+    sections: [],
+  },
   {
     slug: "sunil-kumar-chowgule-sbd",
     image: sunilPortrait,
