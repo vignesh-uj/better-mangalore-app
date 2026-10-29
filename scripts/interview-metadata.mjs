@@ -3,9 +3,9 @@
 export const interviewMetadata = [
   {
     slug: "hemin-bharucha-london-partners",
-    headline: "Unlocking Global Opportunities for Coastal Karnataka's Tech Companies",
+    headline: "From Mangaluru to London: Unlocking Global Opportunities for Coastal Karnataka's Tech Companies",
     description:
-      "A conversation with Mr. Hemin Bharucha, Regional Director India and Asia Pacific at London & Partners, on unlocking global opportunities for Coastal Karnataka's tech companies.",
+      "Insights from a roundtable discussion with London & Partners on international expansion, global talent, investment, and the future of Mangaluru's technology ecosystem.",
     socialImage: "/interviews/hemin-bharucha.jpg",
   },
   {
