@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Conversation data preserves document paragraph order through rich-text strings, ordered list blocks, and optional section numbers; this supports articles without inventing speaker labels or numbering.
+- Conversation photos are source-controlled files in src/assets so exported source retains the original imagery.
