@@ -183,6 +183,17 @@ function InterviewDetail() {
                     </div>
                   ))}
                 </div>
+                {interview.sectionImages?.filter((image) => image.afterHeading === section.heading).map((image) => (
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    loading="lazy"
+                    width={1200}
+                    height={800}
+                    className="mt-8 block h-auto w-full"
+                  />
+                ))}
               </section>
             ))}
           </div>
