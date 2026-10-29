@@ -1,4 +1,5 @@
 import heminPortrait from "@/assets/hemin-bharucha-portrait.jpg";
+import heminStage from "@/assets/hemin-bharucha-stage.jpg";
 import praveenStage from "@/assets/praveen-kalbhavi-stage.jpg";
 import praveenPortrait from "@/assets/praveen-kalbhavi-portrait.jpg";
 import sunilPortrait from "@/assets/sunil-kumar-portrait.jpg";
@@ -13,7 +14,8 @@ export type InterviewExchange = {
 
 export type InterviewSection = {
   heading: string;
-  paragraphs?: string[];
+  number?: string | false;
+  paragraphs?: (string | string[])[];
   exchanges?: InterviewExchange[];
 };
 

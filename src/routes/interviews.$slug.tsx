@@ -16,7 +16,7 @@ export const Route = createFileRoute("/interviews/$slug")({
       };
     }
     const { interview } = loaderData;
-    const title = `${interview.headline} | Better Mangalore`;
+    const title = `${interview.fullTitle ?? interview.headline} | Better Mangalore`;
     return {
       meta: [
         { title },
@@ -33,15 +33,29 @@ export const Route = createFileRoute("/interviews/$slug")({
 });
 
 function renderRichText(text: string) {
-  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+  return text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).map((part, i) =>
     part.startsWith("**") && part.endsWith("**") ? (
       <strong key={i} className="font-bold text-ink">
         {part.slice(2, -2)}
       </strong>
+    ) : part.startsWith("*") && part.endsWith("*") ? (
+      <em key={i}>{part.slice(1, -1)}</em>
     ) : (
       part
     ),
   );
+}
+
+function renderParagraph(p: string | string[], key: number) {
+  if (Array.isArray(p)) {
+    return <ul key={key} className="list-disc space-y-1 pl-6 text-base leading-relaxed text-muted-foreground">
+      {p.map((item, idx) => <li key={idx}>{renderRichText(item)}</li>)}
+    </ul>;
+  }
+  if (p.startsWith("### ")) {
+    return <h3 key={key} className="pt-3 font-sans text-lg font-semibold normal-case leading-snug text-ink">{renderRichText(p.slice(4))}</h3>;
+  }
+  return <p key={key} className="whitespace-pre-line text-base leading-relaxed text-muted-foreground">{renderRichText(p)}</p>;
 }
 
 function slugifyHeading(heading: string) {
@@ -97,7 +111,7 @@ function InterviewDetail() {
           </h1>
           {interview.standfirst && interview.standfirst !== (interview.fullTitle ?? interview.headline) ? (
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              {interview.standfirst}
+              {renderRichText(interview.standfirst)}
             </p>
           ) : null}
 
@@ -121,19 +135,15 @@ function InterviewDetail() {
             {interview.sections.map((section, idx) => (
               <section key={section.heading} id={slugifyHeading(section.heading)}>
                 <div className="flex items-baseline gap-3">
-                  <span className="text-xl font-bold leading-snug text-primary">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
+                  {section.number !== false && <span className="text-xl font-bold leading-snug text-primary">
+                    {section.number ?? String(idx + 1).padStart(2, "0")}
+                  </span>}
                   <h2 className="font-sans text-xl font-semibold normal-case leading-snug text-ink">
                     {section.heading}
                   </h2>
                 </div>
                 <div className="mt-3 space-y-4">
-                  {section.paragraphs?.map((p) => (
-                    <p key={p} className="text-base leading-relaxed text-muted-foreground">
-                      {renderRichText(p)}
-                    </p>
-                  ))}
+                  {section.paragraphs?.map(renderParagraph)}
                 </div>
                 <div className="mt-4 space-y-6">
                   {section.exchanges?.map((ex, exIdx) => (
@@ -197,9 +207,9 @@ function InterviewDetail() {
             <ol className="mt-4 space-y-3">
               {interview.sections.map((section, idx) => (
                 <li key={section.heading} className="flex items-center gap-3">
-                  <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-surface text-xs font-bold text-primary">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
+                  {section.number !== false && <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-surface text-xs font-bold text-primary">
+                    {section.number ?? String(idx + 1).padStart(2, "0")}
+                  </span>}
                   <a
                     href={`#${slugifyHeading(section.heading)}`}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
